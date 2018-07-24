@@ -2,6 +2,13 @@
 /* Font sizes */
 /* Fonts */
 /* sidebar buttons */
+.menu .hamburger-menu {
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
 .sidebar ul {
   list-style-type: none;
 }
@@ -15,10 +22,10 @@
 }
 
 .sidebar .sidebar-link:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-.sidebar ul li {
+.sidebar ul li:hover {
   border-left: 5px solid #ffa200;
 }
 
