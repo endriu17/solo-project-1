@@ -9,8 +9,9 @@
 .sidebar .sidebar-link {
   background-color: #000000;
   display: inline-block;
-  width: 120px;
-  text-align: center;
+  width: 140px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .sidebar .sidebar-link:hover {
@@ -33,8 +34,9 @@
 .sidebar ul li #icon-general {
   fill: #fff;
   width: 20px;
-  height: 20px;
+  line-height: 40px;
   display: inline-block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
