@@ -1,16 +1,144 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
-/* sidebar buttons */
+/* massages */
+.flex-center, .topbar .topbar-list .topbar--item, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .wallet .money, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit {
+  display: flex;
+  align-items: center;
+}
+
+.border-left-edge, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit {
+  border-left: 2px solid #F2F2F2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F2F2F2;
+}
+
+.topbar {
+  height: 50px;
+  background-color: #fff;
+  margin: 0 0 0 140px;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #a6a6a6;
+}
+
+.topbar .topbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topbar .topbar-list .topbar--item {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+.topbar .topbar-list .topbar--item .wallet {
+  width: 160px;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.topbar .topbar-list .topbar--item .wallet .money {
+  font-size: 0.9em;
+  font-weight: bold;
+  width: auto;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.topbar .topbar-list .topbar--item .wallet #icon-wallet {
+  fill: #a6a6a6;
+  width: 20px;
+}
+
+.topbar .topbar-list .topbar--item .wallet #icon-arrow-down-sm {
+  fill: #a6a6a6;
+  width: 15px;
+}
+
+.topbar .topbar-list .topbar--item .notification {
+  width: 50px;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.topbar .topbar-list .topbar--item .notification #icon-notification {
+  fill: #a6a6a6;
+  width: 20px;
+}
+
+.topbar .topbar-list .topbar--item .profile {
+  max-width: 180px;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.topbar .topbar-list .topbar--item .profile #icon-profile {
+  fill: #a6a6a6;
+  width: 20px;
+}
+
+.topbar .topbar-list .topbar--item .profile a {
+  text-decoration: none;
+  font-size: 14px;
+  width: 130px;
+  color: #56819f;
+  padding: 0 5px;
+}
+
+.topbar .topbar-list .topbar--item .profile a:hover {
+  color: #ffa200;
+}
+
+.topbar .topbar-list .topbar--item .quit {
+  width: 50px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.topbar .topbar-list .topbar--item .quit #icon-quit {
+  fill: #a6a6a6;
+  width: 20px;
+}
+
+.menu {
+  background-color: #000000;
+  width: 140px;
+  height: 50px;
+  display: inline-block;
+}
+
 .menu .hamburger-menu {
-  width: 35px;
-  height: 5px;
-  background-color: #000;
-  margin: 6px 0;
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  margin: 5px 7px 0 auto;
+  position: relative;
+  top: -41px;
+}
+
+.menu img {
+  width: 110px;
+  height: 50px;
 }
 
 .sidebar ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .sidebar .sidebar-link {
@@ -18,11 +146,10 @@
   display: inline-block;
   width: 140px;
   text-align: left;
-  padding-left: 10px;
 }
 
 .sidebar .sidebar-link:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .sidebar ul li:hover {
@@ -33,16 +160,16 @@
   text-decoration: none;
   font-family: "Open Sans", Helvetica, Arial;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   line-height: 40px;
+  padding-left: 15px;
 }
 
 .sidebar ul li #icon-general {
   fill: #fff;
   width: 20px;
   line-height: 40px;
-  display: inline-block;
   text-align: center;
 }
 

@@ -2,6 +2,11 @@
 $paragraph-color: #000000;
 $brand-main-color: #ff0000;
 $button-font-color: #fff;
+$sidebar-button--color: #000000;
+$active-refresh-color:  #ffa200;
+$icon-background-color: #a6a6a6;
+$profile-link-color: #56819f;
+$border-edge-color:  #F2F2F2;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
@@ -10,6 +15,13 @@ $paragraph-font-size: 16px;
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
 
-/* sidebar buttons */
+/* massages */
 
-$sidebar-button--color: #000000;
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.border-left-edge {
+  border-left: 2px solid $border-edge-color;
+}

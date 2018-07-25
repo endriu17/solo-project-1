@@ -1,50 +1,176 @@
 @import "variables";
 @import "mixins";
-@import "layout";
-// @import "_normalize";
+@import "layout"; // @import "_normalize";
+* {
+  box-sizing: border-box;
+}
 
-.menu  {
-    .hamburger-menu {
-        width: 35px;
-        height: 5px;
-        background-color:#000;
-        margin: 6px 0;
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#F2F2F2;
+}
+.topbar {
+  height: 50px;
+  // width: 100%;
+  background-color: #fff;
+  margin: 0 0 0 140px;
+  font-family: $brand-font;
+  color: $icon-background-color;
+
+  .topbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+
+    .topbar--item {
+      margin: 0;
+      padding: 0;
+      height: 50px;
+      @extend .flex-center;
+
+      .wallet {
+        width: 160px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding: 0 10px;
+
+        .money {
+          font-size: 0.9em;
+          font-weight: bold;
+          width: auto;
+          height: 50px;
+          margin: 0 auto;
+          @extend .flex-center;
+          padding: 0 10px;
+        }
+
+        #icon-wallet {
+        fill: $icon-background-color;
+          width: 20px;
+        }
+
+        #icon-arrow-down-sm {
+          fill: $icon-background-color;
+          width: 15px;
+        }
+      }
+
+      .notification {
+        width: 50px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding: 0 15px;
+
+        #icon-notification {
+          fill: $icon-background-color;
+          width: 20px;
+        }
+      }
+
+      .profile {
+        max-width: 180px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding: 0 10px;
+
+        #icon-profile {
+        fill: $icon-background-color;
+          width: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          width: 130px;
+          color: $profile-link-color;
+          padding: 0 5px;
+
+          &:hover {
+            color: $active-refresh-color;
+          }
+        }
+      }
+
+      .quit {
+        width: 50px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding-left: 20px;
+
+        #icon-quit {
+          fill: $icon-background-color;
+          width: 20px;
+        }
+      }
     }
+  }
+}
+
+.menu {
+  background-color: $sidebar-button--color;
+  width: 140px;
+  height: 50px;
+  display: inline-block;
+
+  .hamburger-menu {
+    width: 15px;
+    height: 1px;
+    background-color: $button-font-color;
+    margin: 5px 7px 0 auto;
+    position: relative;
+    top: -41px;
+  }
+
+  img {
+    width: 110px;
+    height: 50px;
+  }
 }
 
 .sidebar {
-    ul {
-        list-style-type: none;
-    }
-    .sidebar-link   {
-        background-color: $sidebar-button--color;
-        display: inline-block;
-        width: 140px;
-        text-align: left;
-        padding-left: 10px;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-    ul li:hover {
-        border-left: 5px solid #ffa200;
-    }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-    ul li a {
-        text-decoration: none;
-        font-family: $brand-font;
-        color: $button-font-color;
-        font-size: 16px;
-        text-align: center;
-        line-height: 40px;
+  .sidebar-link {
+    background-color: $sidebar-button--color;
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    &:hover {
+      opacity: 0.7;
     }
+  }
 
-    ul li #icon-general {
-       fill: #fff;
-       width: 20px;
-       line-height: 40px;
-       display: inline-block;
-       text-align: center;
-    }
- 
+  ul li:hover {
+    border-left: 5px solid $active-refresh-color;
+  }
+
+  ul li a {
+    text-decoration: none;
+    font-family: $brand-font;
+    color: $button-font-color;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    padding-left: 15px;
+  }
+
+  ul li #icon-general {
+    fill: $button-font-color;
+    width: 20px;
+    line-height: 40px;
+    text-align: center;
+
+  }
 }
