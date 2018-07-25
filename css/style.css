@@ -15,8 +15,8 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+body,
+html {
   padding: 0;
   margin: 0;
   background-color: #F2F2F2;
@@ -25,7 +25,7 @@ body {
 .topbar {
   height: 50px;
   background-color: #fff;
-  margin: 0 0 0 140px;
+  margin: 0 0 0 160px;
   font-family: "Open Sans", Helvetica, Arial;
   color: #a6a6a6;
 }
@@ -117,22 +117,31 @@ body {
 
 .menu {
   background-color: #000000;
-  width: 140px;
+  width: 160px;
   height: 50px;
   display: inline-block;
 }
 
-.menu .hamburger-menu {
-  width: 15px;
-  height: 1px;
-  background-color: #fff;
-  margin: 5px 7px 0 auto;
+.menu a .hamburger-menu {
+  width: 30px;
+  height: 30px;
+  background-color: #a6a6a6;
+  margin: 0 0 0 auto;
   position: relative;
-  top: -41px;
+  top: -45px;
 }
 
-.menu img {
-  width: 110px;
+.menu a .hamburger-menu .img_hamburger {
+  height: 30px;
+  width: 30px;
+}
+
+.menu a .hamburger-menu:hover {
+  background-color: #fff;
+}
+
+.menu .img_logo {
+  width: 130px;
   height: 50px;
 }
 
@@ -144,12 +153,13 @@ body {
 .sidebar .sidebar-link {
   background-color: #000000;
   display: inline-block;
-  width: 140px;
+  width: 160px;
   text-align: left;
 }
 
 .sidebar .sidebar-link:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+  color: #fff;
 }
 
 .sidebar ul li:hover {
@@ -159,18 +169,72 @@ body {
 .sidebar ul li a {
   text-decoration: none;
   font-family: "Open Sans", Helvetica, Arial;
-  color: #fff;
+  color: #a6a6a6;
   font-size: 14px;
   text-align: center;
   line-height: 40px;
   padding-left: 15px;
 }
 
+.sidebar ul li a:hover {
+  color: #fff;
+}
+
 .sidebar ul li #icon-general {
-  fill: #fff;
+  fill: #a6a6a6;
   width: 20px;
   line-height: 40px;
   text-align: center;
+}
+
+.sidebar-manager__info {
+  width: 160px;
+  height: 100%;
+  font-family: "Open Sans", Helvetica, Arial;
+  background-color: #000000;
+  margin: 0;
+}
+
+.sidebar-manager__info .manager__header {
+  color: #a6a6a6;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.sidebar-manager__info .manager__status {
+  padding: 5px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.sidebar-manager__info .manager__status img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.sidebar-manager__info .manager__status a {
+  text-decoration: none;
+  color: #56819f;
+  position: relative;
+  bottom: 15px;
+  padding: 5px;
+}
+
+.sidebar-manager__info .manager__status a:hover {
+  color: #ffa200;
+}
+
+.sidebar-manager__info .manager__status .manager__online {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: #16dd44;
+  position: absolute;
+  top: 3px;
+  left: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,21 +1,23 @@
 @import "variables";
 @import "mixins";
 @import "layout"; // @import "_normalize";
+
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-    background-color:#F2F2F2;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #F2F2F2;
 }
+
 .topbar {
   height: 50px;
   // width: 100%;
   background-color: #fff;
-  margin: 0 0 0 140px;
+  margin: 0 0 0 160px;
   font-family: $brand-font;
   color: $icon-background-color;
 
@@ -51,7 +53,7 @@ body {
         }
 
         #icon-wallet {
-        fill: $icon-background-color;
+          fill: $icon-background-color;
           width: 20px;
         }
 
@@ -82,7 +84,7 @@ body {
         padding: 0 10px;
 
         #icon-profile {
-        fill: $icon-background-color;
+          fill: $icon-background-color;
           width: 20px;
         }
 
@@ -117,21 +119,33 @@ body {
 
 .menu {
   background-color: $sidebar-button--color;
-  width: 140px;
+  width: 160px;
   height: 50px;
   display: inline-block;
 
-  .hamburger-menu {
-    width: 15px;
-    height: 1px;
-    background-color: $button-font-color;
-    margin: 5px 7px 0 auto;
-    position: relative;
-    top: -41px;
+  a {
+    .hamburger-menu {
+      width: 30px;
+      height: 30px;
+      background-color: $icon-background-color;
+      margin: 0 0 0 auto;
+      position: relative;
+      top: -45px;
+
+      .img_hamburger {
+        height: 30px;
+        width: 30px;
+      }
+      &:hover {
+        background-color: $button-font-color;
+      }
+    }
+
+
   }
 
-  img {
-    width: 110px;
+  .img_logo {
+    width: 130px;
     height: 50px;
   }
 }
@@ -145,10 +159,12 @@ body {
   .sidebar-link {
     background-color: $sidebar-button--color;
     display: inline-block;
-    width: 140px;
+    width: 160px;
     text-align: left;
+
     &:hover {
-      opacity: 0.7;
+      opacity: 0.8;
+      color: $button-font-color;
     }
   }
 
@@ -159,18 +175,75 @@ body {
   ul li a {
     text-decoration: none;
     font-family: $brand-font;
-    color: $button-font-color;
+    color: $icon-background-color;
     font-size: 14px;
     text-align: center;
     line-height: 40px;
     padding-left: 15px;
+
+    &:hover {
+      color: $button-font-color;
+    }
   }
 
   ul li #icon-general {
-    fill: $button-font-color;
+    fill: $icon-background-color;
     width: 20px;
     line-height: 40px;
     text-align: center;
 
+    &:hover {}
+  }
+}
+
+.sidebar-manager__info {
+  width: 160px;
+  height: 100%;
+  font-family: $brand-font;
+  background-color: $sidebar-button--color;
+  // @extend .flex-center;
+  margin: 0;
+
+  .manager__header {
+    color: $icon-background-color;
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .manager__status {
+    padding: 5px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $profile-link-color;
+      position: relative;
+      bottom: 15px;
+      padding: 5px;
+
+      &:hover {
+        color: $active-refresh-color;
+      }
+    }
+
+    .manager__online {
+      border-radius: 50%;
+      height: 12px;
+      width: 12px;
+      background-color: #16dd44;
+      position: absolute;
+      top: 3px;
+      left: 40px;
+    }
+    // display: inline-block;
   }
 }
