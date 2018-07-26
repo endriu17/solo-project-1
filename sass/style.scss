@@ -273,11 +273,22 @@ html {
 
 // counter SECTION
 
-.counter {
-  width: 20%;
-  height: 40px;
+.counters {
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+      justify-content: space-evenly;
+  .counter  {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    .counter-label {
+      color: $icon-background-color;
+      font-size: $paragraph-font-size;
+    }
+  }
 }
 
 // refresh button

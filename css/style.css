@@ -259,11 +259,24 @@ html {
   font-weight: 500;
 }
 
-.counter {
-  width: 20%;
+.counters {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.counters .counter {
+  width: 50%;
   height: 40px;
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
+}
+
+.counters .counter .counter-label {
+  color: #a6a6a6;
+  font-size: 16px;
 }
 
 .button-refresh {

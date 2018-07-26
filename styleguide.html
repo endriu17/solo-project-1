@@ -11,6 +11,8 @@
 
 <body>
 
+  <!-- Topbar elements -->
+
   <p>Topbar</p>
   <div class="topbar">
     <ul class="topbar-list">
@@ -34,7 +36,6 @@
           	C4.6,4,6.6,2,9.1,2s4.5,2,4.5,4.5V12h-9V6.5z M4.3,13h9.5l1.3,2H3L4.3,13z M9.1,17c-0.7,0-1.2-0.4-1.4-1h2.8
           	C10.3,16.6,9.7,17,9.1,17z"/>
           </svg>
-
         </div>
       </li>
       <li class="topbar--item">
@@ -60,6 +61,8 @@
       </li>
     </ul>
   </div>
+
+  <!--  Sidebar elements -->
 
   <p>Hamburger menu and logo</p>
   <wrapper class="menu">
@@ -99,6 +102,33 @@
 
   </div>
 
+  <!--  Content elements -->
+
+  <p>Content header</p>
+
+  <h1 class="general-content--header">general statistics</h1>
+
+  <p>counter section</p>
+
+  <div class="counters">
+    <div class="counter counter-visit">
+      <span class="counter-label">Visit Signups</span>
+      <span class="counter-visit__number">124</span>
+    </div>
+    <div class="counter counter-deposit">
+      <span class="counter-label">Net deposit</span>
+      <span class="counter-deposit__number">564</span>
+    </div>
+    <div class="counter counter-ftd">
+      <span class="counter-label">FTD</span>
+      <span class="counter-ftd__number">445</span>
+    </div>
+    <div class="counter counter-turn">
+      <span class="counter-label">Turn over</span>
+      <span class="counter-turn__number">432</span>
+    </div>
+  </div>
+
   <p>Refresh button</p>
   <button class="button-refresh" type="submit" name="update">
     <svg id="icon-refresh" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -108,7 +138,7 @@
     </svg>
   </button>
 
-  <p>Period on checker input</p>
+  <p>Period checker input</p>
   <wrapper class="date-input">
     <input type="date" name="date_from" value="">
     <input type="date" name="date_to" value="">
@@ -119,6 +149,8 @@
   </wrapper>
 
   <p>Earnings chart</p>
+
+  <img src="/images/earnings_chart.png" alt="general-chart">
 </body>
 
 </html>
