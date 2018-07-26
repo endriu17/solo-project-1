@@ -69,24 +69,20 @@ html {
         @extend .flex-center;
         @extend .border-left-edge;
         padding: 0 10px;
+
         &::before {
-            content: '\2022';
-            color: $active-refresh-color;
-            // border-radius: 50%;
-            font-size: 22px;
-            // width: 8px;
-            // display: block;
-            position: relative;
-            top: -6px;
-            left: 18px;
-          }
+          content: '\2022';
+          color: $active-refresh-color;
+          font-size: 22px;
+          position: relative;
+          top: -6px;
+          left: 18px;
+        }
+
         #icon-notification {
           fill: $icon-background-color;
           width: 30px;
-
         }
-
-
       }
 
       .profile {
@@ -124,6 +120,7 @@ html {
         #icon-quit {
           fill: $icon-background-color;
           width: 20px;
+
           &:hover {
             fill: $active-refresh-color;
           }
@@ -152,12 +149,11 @@ html {
         height: 30px;
         width: 30px;
       }
+
       &:hover {
         background-color: $button-font-color;
       }
     }
-
-
   }
 
   .img_logo {
@@ -170,46 +166,46 @@ html {
   ul {
     list-style-type: none;
     padding: 0;
-  }
 
-  .sidebar-link {
-    background-color: $sidebar-button--color;
-    display: inline-block;
-    width: 160px;
-    text-align: left;
+    .sidebar-link {
+      background-color: $sidebar-button--color;
+      display: inline-block;
+      width: 160px;
+      text-align: left;
 
-    &:hover {
-      opacity: 0.7;
-      // color: $button-font-color;
+      &:hover {
+        opacity: 0.7;
+      }
     }
-  }
 
-  ul li:hover {
-    border-left: 5px solid $active-refresh-color;
-  }
+    li {
+      &:hover {
+        border-left: 5px solid $active-refresh-color;
+        a {
+          color: $button-font-color;
+          #icon-general {
+              fill: $button-font-color;
+          }
+        }
+      }
 
-  ul li a {
-    text-decoration: none;
-    font-family: $brand-font;
-    color: $icon-background-color;
-    font-size: 14px;
-    text-align: center;
-    line-height: 40px;
-    padding-left: 15px;
+      #icon-general {
+        fill: $icon-background-color;
+        width: 20px;
+        line-height: 40px;
+        text-align: center;
 
-    &:hover {
-      color: $button-font-color;
-    }
-  }
+      }
 
-  ul li #icon-general {
-    fill: $icon-background-color;
-    width: 20px;
-    line-height: 40px;
-    text-align: center;
-
-    &:hover {
-      fill: $button-font-color;
+      a {
+        text-decoration: none;
+        font-family: $brand-font;
+        color: $icon-background-color;
+        font-size: 14px;
+        text-align: center;
+        line-height: 40px;
+        padding-left: 15px;
+      }
     }
   }
 }
@@ -264,7 +260,6 @@ html {
     }
   }
 }
-
 // refresh buttons
 
 .button-refresh {
@@ -273,9 +268,35 @@ html {
   background-color: $brand-main-color;
   border: none;
   border-radius: 5px;
+  outline: none;
   #icon-refresh {
     fill: $border-edge-color;
     width: 25px;
   }
+}
+// period checker date-input
+
+.date-input {
+  @extend .flex-center;
+  border: 1px solid $border-edge-color;
+  height: 50px;
+  width: 50%;
+  margin: 0;
+  padding: 5px;
+  background-color: #ffffff;
+  input {
+    border: none;
+    margin: 0;
+    width: 45%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 14px;
+  }
+  #icon_date {
+    width: 10%;
+    height: 25px;
+    fill: $icon-background-color;
+  }
+
 
 }
