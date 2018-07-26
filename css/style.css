@@ -268,6 +268,10 @@ html {
   outline: none;
 }
 
+.button-refresh:hover {
+  opacity: 0.7;
+}
+
 .button-refresh #icon-refresh {
   fill: #F2F2F2;
   width: 25px;
@@ -276,7 +280,7 @@ html {
 .date-input {
   border: 1px solid #F2F2F2;
   height: 50px;
-  width: 50%;
+  width: 40%;
   margin: 0;
   padding: 5px;
   background-color: #ffffff;

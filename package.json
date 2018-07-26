@@ -8,7 +8,7 @@
     "test:html": "glob-run nu-html-checker *.html",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdir sass css vendor images js",
-    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:files": "touch README.md index.html styleguide.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:clean": "rimraf css/*",
