@@ -8,9 +8,10 @@
 
 body,
 html {
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
   background-color: #F2F2F2;
+  font-family: $brand-font;
 }
 
 .topbar {
@@ -260,6 +261,17 @@ html {
     }
   }
 }
+
+// CONTENT SECTION
+
+.general-content--header {
+  color: $icon-background-color;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
 // refresh buttons
 
 .button-refresh {
