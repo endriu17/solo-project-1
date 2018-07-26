@@ -73,12 +73,21 @@ html {
 .topbar .topbar-list .topbar--item .notification {
   width: 50px;
   height: 50px;
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+.topbar .topbar-list .topbar--item .notification::before {
+  content: '\2022';
+  color: #ffa200;
+  font-size: 22px;
+  position: relative;
+  top: -6px;
+  left: 18px;
 }
 
 .topbar .topbar-list .topbar--item .notification #icon-notification {
   fill: #a6a6a6;
-  width: 20px;
+  width: 30px;
 }
 
 .topbar .topbar-list .topbar--item .profile {
@@ -242,6 +251,19 @@ html {
   position: absolute;
   top: 4px;
   left: 39px;
+}
+
+.button-refresh {
+  width: 50px;
+  height: 50px;
+  background-color: #f58220;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-refresh #icon-refresh {
+  fill: #F2F2F2;
+  width: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
