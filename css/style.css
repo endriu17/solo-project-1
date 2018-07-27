@@ -2,7 +2,7 @@
 /* Font sizes */
 /* Fonts */
 /* massages */
-.flex-center, .topbar .topbar-list .topbar--item, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .wallet .money, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit, .date-input {
+.flex-center, .topbar .topbar-list .topbar--item, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .wallet .money, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit, .content .date-input {
   display: flex;
   align-items: center;
 }
@@ -17,16 +17,164 @@
 
 body,
 html {
+  padding: 0;
+  margin: 0;
   background-color: #F2F2F2;
   font-family: "Open Sans", Helvetica, Arial;
 }
 
+.sidebar {
+  height: 100%;
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+.sidebar .sidebar-menu {
+  background-color: #000000;
+  width: 180px;
+  height: 50px;
+}
+
+.sidebar .sidebar-menu .img_logo {
+  width: 135px;
+  height: 50px;
+}
+
+.sidebar .sidebar-menu a .hamburger-menu {
+  width: 30px;
+  height: 30px;
+  background-color: #808080;
+  margin: 0;
+  position: relative;
+  top: -45px;
+  left: 140px;
+}
+
+.sidebar .sidebar-menu a .hamburger-menu:hover {
+  background-color: #fff;
+}
+
+.sidebar .sidebar-menu a .hamburger-menu .img_hamburger {
+  height: 30px;
+  width: 40px;
+  position: relative;
+  left: 0;
+}
+
+.sidebar .sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link {
+  background-color: #000000;
+  width: 100%;
+  text-align: left;
+  border-left: 5px solid #000000;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link a {
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #808080;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 15px;
+  vertical-align: baseline;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link a #icon-general {
+  fill: #808080;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link:hover {
+  opacity: 0.8;
+  border-left: 5px solid #ffa200;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link:hover a {
+  color: #fff;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link:hover a #icon-general {
+  fill: #fff;
+}
+
+.sidebar .sidebar-nav ul .sidebar-link_end {
+  height: 25px;
+  background-color: #000000;
+}
+
+.sidebar .sidebar-manager__info {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", Helvetica, Arial;
+  background-color: #000000;
+  margin: 0;
+  border-top: 1px solid #808080;
+}
+
+.sidebar .sidebar-manager__info .manager__header {
+  color: #808080;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.sidebar .sidebar-manager__info .manager__status {
+  padding: 5px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.sidebar .sidebar-manager__info .manager__status img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.sidebar .sidebar-manager__info .manager__status a {
+  text-decoration: none;
+  color: #56819f;
+  position: relative;
+  bottom: 15px;
+  padding: 5px;
+}
+
+.sidebar .sidebar-manager__info .manager__status a:hover {
+  color: #ffa200;
+}
+
+.sidebar .sidebar-manager__info .manager__status .manager__online {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: #16dd44;
+  position: absolute;
+  top: 4px;
+  left: 39px;
+}
+
 .topbar {
   height: 50px;
+  width: 100%;
   background-color: #fff;
-  margin: 0 0 0 160px;
+  margin: 0;
   font-family: "Open Sans", Helvetica, Arial;
-  color: #a6a6a6;
+  color: #808080;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .topbar .topbar-list {
@@ -60,12 +208,12 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .wallet #icon-wallet {
-  fill: #a6a6a6;
+  fill: #808080;
   width: 20px;
 }
 
 .topbar .topbar-list .topbar--item .wallet #icon-arrow-down-sm {
-  fill: #a6a6a6;
+  fill: #808080;
   width: 15px;
 }
 
@@ -85,7 +233,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .notification #icon-notification {
-  fill: #a6a6a6;
+  fill: #808080;
   width: 30px;
 }
 
@@ -96,7 +244,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .profile #icon-profile {
-  fill: #a6a6a6;
+  fill: #808080;
   width: 20px;
 }
 
@@ -119,7 +267,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .quit #icon-quit {
-  fill: #a6a6a6;
+  fill: #808080;
   width: 20px;
 }
 
@@ -127,146 +275,27 @@ html {
   fill: #ffa200;
 }
 
-.menu {
-  background-color: #000000;
-  width: 160px;
-  height: 50px;
-  display: inline-block;
-}
-
-.menu a .hamburger-menu {
-  width: 30px;
-  height: 30px;
-  background-color: #a6a6a6;
-  margin: 0 0 0 auto;
-  position: relative;
-  top: -45px;
-}
-
-.menu a .hamburger-menu .img_hamburger {
-  height: 30px;
-  width: 30px;
-}
-
-.menu a .hamburger-menu:hover {
-  background-color: #fff;
-}
-
-.menu .img_logo {
-  width: 130px;
-  height: 50px;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul .sidebar-link {
-  background-color: #000000;
-  display: inline-block;
-  width: 160px;
-  text-align: left;
-}
-
-.sidebar ul .sidebar-link:hover {
-  opacity: 0.7;
-}
-
-.sidebar ul li:hover {
-  border-left: 5px solid #ffa200;
-}
-
-.sidebar ul li:hover a {
-  color: #fff;
-}
-
-.sidebar ul li:hover a #icon-general {
-  fill: #fff;
-}
-
-.sidebar ul li #icon-general {
-  fill: #a6a6a6;
-  width: 20px;
-  line-height: 40px;
-  text-align: center;
-}
-
-.sidebar ul li a {
-  text-decoration: none;
-  font-family: "Open Sans", Helvetica, Arial;
-  color: #a6a6a6;
-  font-size: 14px;
-  text-align: center;
-  line-height: 40px;
-  padding-left: 15px;
-}
-
-.sidebar-manager__info {
-  width: 160px;
-  height: 100%;
-  font-family: "Open Sans", Helvetica, Arial;
-  background-color: #000000;
-  margin: 0;
-}
-
-.sidebar-manager__info .manager__header {
-  color: #a6a6a6;
-  font-size: 14px;
-  padding: 20px;
-}
-
-.sidebar-manager__info .manager__status {
-  padding: 5px;
-  line-height: 60px;
-  text-align: center;
-  position: relative;
-}
-
-.sidebar-manager__info .manager__status img {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-.sidebar-manager__info .manager__status a {
-  text-decoration: none;
-  color: #56819f;
-  position: relative;
-  bottom: 15px;
-  padding: 5px;
-}
-
-.sidebar-manager__info .manager__status a:hover {
-  color: #ffa200;
-}
-
-.sidebar-manager__info .manager__status .manager__online {
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  background-color: #16dd44;
+.content {
   position: absolute;
-  top: 4px;
-  left: 39px;
+  top: 50px;
+  left: 180px;
 }
 
-.general-content--header {
-  color: #a6a6a6;
+.content .general-content--header {
+  color: #808080;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.counters {
+.content .counters {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.counters .counter {
+.content .counters .counter {
   width: 50%;
   height: 40px;
   display: flex;
@@ -274,12 +303,12 @@ html {
   padding: 0 10px;
 }
 
-.counters .counter .counter-label {
-  color: #a6a6a6;
+.content .counters .counter .counter-label {
+  color: #808080;
   font-size: 16px;
 }
 
-.button-refresh {
+.content .button-refresh {
   width: 50px;
   height: 50px;
   background-color: #f58220;
@@ -288,16 +317,16 @@ html {
   outline: none;
 }
 
-.button-refresh:hover {
+.content .button-refresh:hover {
   opacity: 0.7;
 }
 
-.button-refresh #icon-refresh {
+.content .button-refresh #icon-refresh {
   fill: #F2F2F2;
   width: 25px;
 }
 
-.date-input {
+.content .date-input {
   border: 1px solid #F2F2F2;
   height: 50px;
   width: 40%;
@@ -306,7 +335,7 @@ html {
   background-color: #ffffff;
 }
 
-.date-input input {
+.content .date-input input {
   border: none;
   margin: 0;
   width: 45%;
@@ -315,10 +344,10 @@ html {
   font-size: 14px;
 }
 
-.date-input #icon_date {
+.content .date-input #icon_date {
   width: 10%;
   height: 25px;
-  fill: #a6a6a6;
+  fill: #808080;
 }
 
 /*# sourceMappingURL=style.css.map */

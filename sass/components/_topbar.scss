@@ -1,0 +1,119 @@
+.topbar {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  font-family: $brand-font;
+  color: $icon-background-color;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  .topbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+
+    .topbar--item {
+      margin: 0;
+      padding: 0;
+      height: 50px;
+      @extend .flex-center;
+
+      .wallet {
+        width: 160px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding: 0 10px;
+
+        .money {
+          font-size: 0.9em;
+          font-weight: bold;
+          width: auto;
+          height: 50px;
+          margin: 0 auto;
+          @extend .flex-center;
+          padding: 0 10px;
+        }
+
+        #icon-wallet {
+          fill: $icon-background-color;
+          width: 20px;
+        }
+
+        #icon-arrow-down-sm {
+          fill: $icon-background-color;
+          width: 15px;
+        }
+      }
+
+      .notification {
+        width: 50px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding: 0 10px;
+
+        &::before {
+          content: '\2022';
+          color: $active-refresh-color;
+          font-size: 22px;
+          position: relative;
+          top: -6px;
+          left: 18px;
+        }
+
+        #icon-notification {
+          fill: $icon-background-color;
+          width: 30px;
+        }
+      }
+
+      .profile {
+        max-width: 180px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding: 0 10px;
+
+        #icon-profile {
+          fill: $icon-background-color;
+          width: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          width: 130px;
+          color: $profile-link-color;
+          padding: 0 5px;
+
+          &:hover {
+            color: $active-refresh-color;
+          }
+        }
+      }
+
+      .quit {
+        width: 50px;
+        height: 50px;
+        @extend .flex-center;
+        @extend .border-left-edge;
+        padding-left: 20px;
+
+        #icon-quit {
+          fill: $icon-background-color;
+          width: 20px;
+
+          &:hover {
+            fill: $active-refresh-color;
+          }
+        }
+      }
+    }
+  }
+}
