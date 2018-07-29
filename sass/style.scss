@@ -1,18 +1,23 @@
 @import "variables";
 @import "mixins";
-@import "layout"; // @import "_normalize";
+@import "layout";
 @import "sidebar";
-@import "topbar"; // CONTENT SECTION
+@import "topbar";
+/* @import "_normalize"; */
+
+
+// CONTENT SECTION
 
 .content {
   display: block;
   margin: 50px 0 0 180px;
   padding: 20px;
   background-color: #f5f5f5;
+  color: $icon-background-color;
   .content-general {
     background-color: #ffffff;
     width: 100%;
-
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.125);
     .content-general__header {
       h1 {
       color: $icon-background-color;
@@ -26,7 +31,8 @@
     .content-general__date {
       display: flex;
       @extend .flex-center;
-      border: 1px solid $border-edge-color;
+      border-top: 2px solid $border-edge-color;
+      border-bottom: 2px solid $border-edge-color;
       height: 50px;
       margin: 0 auto;
       padding: 50px 25%;
@@ -35,7 +41,7 @@
       form {
         display: flex;
         padding: 10px 10px 10px 0;
-        border: 1px solid $border-edge-color;
+        border: 2px solid $border-edge-color;
         align-content: center;
         input {
         border: none;
@@ -44,10 +50,9 @@
         padding-left: 20px;
         height: 30px;
         font-size: 16px;
-        // text-align: center;
+        color: $icon-background-color;
         &:nth-of-type(2){
-          border-left: 1px solid $border-edge-color;
-          // padding-left:
+          border-left: 2px solid $border-edge-color;
         }
         }
         #icon_date {
@@ -86,7 +91,7 @@
         cellpadding: 20px;
         th {
         font-weight: normal;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 2px solid $border-edge-color;
       }
 
       .counter {

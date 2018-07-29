@@ -23,6 +23,15 @@ html {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
+.home li.home {
+  height: 50px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  opacity: 0.8;
+  border-left: 5px solid #ffa200;
+}
+
 .sidebar {
   height: 100%;
   width: 180px;
@@ -75,7 +84,6 @@ html {
   background-color: #000000;
   width: 100%;
   text-align: left;
-  border-left: 5px solid #000000;
 }
 
 .sidebar .sidebar-nav ul .sidebar-link a {
@@ -86,7 +94,6 @@ html {
   text-align: center;
   line-height: 50px;
   padding-left: 15px;
-  vertical-align: baseline;
 }
 
 .sidebar .sidebar-nav ul .sidebar-link a #icon-general {
@@ -99,7 +106,6 @@ html {
 
 .sidebar .sidebar-nav ul .sidebar-link:hover {
   opacity: 0.8;
-  border-left: 5px solid #ffa200;
 }
 
 .sidebar .sidebar-nav ul .sidebar-link:hover a {
@@ -177,6 +183,7 @@ html {
   display: block;
   top: 0;
   z-index: 1;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.125);
 }
 
 .topbar .topbar-list {
@@ -279,16 +286,19 @@ html {
   fill: #ffa200;
 }
 
+/* @import "_normalize"; */
 .content {
   display: block;
   margin: 50px 0 0 180px;
   padding: 20px;
   background-color: #f5f5f5;
+  color: #808080;
 }
 
 .content .content-general {
   background-color: #ffffff;
   width: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.125);
 }
 
 .content .content-general .content-general__header h1 {
@@ -302,7 +312,8 @@ html {
 
 .content .content-general .content-general__date {
   display: flex;
-  border: 1px solid #F2F2F2;
+  border-top: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
   height: 50px;
   margin: 0 auto;
   padding: 50px 25%;
@@ -313,7 +324,7 @@ html {
 .content .content-general .content-general__date form {
   display: flex;
   padding: 10px 10px 10px 0;
-  border: 1px solid #F2F2F2;
+  border: 2px solid #F2F2F2;
   align-content: center;
 }
 
@@ -324,10 +335,11 @@ html {
   padding-left: 20px;
   height: 30px;
   font-size: 16px;
+  color: #808080;
 }
 
 .content .content-general .content-general__date form input:nth-of-type(2) {
-  border-left: 1px solid #F2F2F2;
+  border-left: 2px solid #F2F2F2;
 }
 
 .content .content-general .content-general__date form #icon_date {
@@ -372,7 +384,7 @@ html {
 
 .content .content-general .content-wrapper .content-general__table table th {
   font-weight: normal;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #F2F2F2;
 }
 
 .content .content-general .content-wrapper .content-general__table table .counter {
