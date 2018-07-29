@@ -1,84 +1,124 @@
 @import "variables";
 @import "mixins";
 @import "layout"; // @import "_normalize";
-@import "components/sidebar";
-@import "components/topbar";
+@import "sidebar";
+@import "topbar"; // CONTENT SECTION
 
-// CONTENT SECTION
 .content {
-  position: absolute;
-  top: 50px;
-  left: 180px;
-.general-content--header {
-  color: $icon-background-color;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-// counter SECTION
+  display: block;
+  margin: 50px 0 0 180px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  .content-general {
+    background-color: #ffffff;
+    width: 100%;
 
-.counters {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  .counter {
-    width: 50%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-
-    .counter-label {
+    .content-general__header {
+      h1 {
       color: $icon-background-color;
-      font-size: $paragraph-font-size;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 20px;
+      margin: 0;
     }
   }
-}
-// refresh button
+    .content-general__date {
+      display: flex;
+      @extend .flex-center;
+      border: 1px solid $border-edge-color;
+      height: 50px;
+      margin: 0 auto;
+      padding: 50px 25%;
+      background-color: #ffffff;
+      width: 100%;
+      form {
+        display: flex;
+        padding: 10px 10px 10px 0;
+        border: 1px solid $border-edge-color;
+        align-content: center;
+        input {
+        border: none;
+        margin: 0;
+        width: 50%;
+        padding-left: 20px;
+        height: 30px;
+        font-size: 16px;
+        // text-align: center;
+        &:nth-of-type(2){
+          border-left: 1px solid $border-edge-color;
+          // padding-left:
+        }
+        }
+        #icon_date {
+          width: 30px;
+          height: 30px;
+          fill: $icon-background-color;
+        }
+      }
 
-.button-refresh {
-  width: 50px;
-  height: 50px;
-  background-color: $brand-main-color;
-  border: none;
-  border-radius: 5px;
-  outline: none;
+      .button-refresh {
+        width: 40px;
+        height: 40px;
+        background-color: $brand-main-color;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        margin-left: 15px;
+        &:hover {
+          opacity: 0.7;
+        }
 
-  &:hover {
-    opacity: 0.7;
-  }
+        #icon-refresh {
+          fill: $border-edge-color;
+          width: 25px;
+        }
+      }
+    }
+    .content-wrapper {
+      padding: 25px;
+      width: 100%;
+    .content-general__table {
+      padding: 50px 20%;
+      table {
+        table-layout: fixed;
+        width: 100%;
+        cellpadding: 20px;
+        th {
+        font-weight: normal;
+        border-bottom: 1px solid #ddd;
+      }
 
-  #icon-refresh {
-    fill: $border-edge-color;
-    width: 25px;
-  }
-}
-// period checker date-input
-
-.date-input {
-  @extend .flex-center;
-  border: 1px solid $border-edge-color;
-  height: 50px;
-  width: 40%;
-  margin: 0;
-  padding: 5px;
-  background-color: #ffffff;
-
-  input {
-    border: none;
-    margin: 0;
-    width: 45%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 14px;
-  }
-
-  #icon_date {
-    width: 10%;
-    height: 25px;
-    fill: $icon-background-color;
+      .counter {
+        width: 100%;
+        height: 50px;
+          .visit-deposit__label {
+            text-align: left;
+          }
+          .brake {
+            border: none;
+          }
+          .visit-deposit__number {
+            text-align: center;
+          }
+          .ftd-to__label {
+            text-align: left;
+          }
+          .ftd-to__number {
+              text-align: center;
+          }
+      }
+    }
+    }
+    .content-general__chart {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 10%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 }
