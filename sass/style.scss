@@ -5,9 +5,7 @@
 @import "topbar";
 /* @import "_normalize"; */
 
-
 // CONTENT SECTION
-
 .content {
   display: block;
   margin: 50px 0 0 180px;
@@ -17,17 +15,17 @@
   .content-general {
     background-color: #ffffff;
     width: 100%;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,.125);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .125);
     .content-general__header {
       h1 {
-      color: $icon-background-color;
-      font-size: 20px;
-      text-transform: uppercase;
-      font-weight: 500;
-      padding: 20px;
-      margin: 0;
+        color: $icon-background-color;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 20px;
+        margin: 0;
+      }
     }
-  }
     .content-general__date {
       display: flex;
       @extend .flex-center;
@@ -44,16 +42,16 @@
         border: 2px solid $border-edge-color;
         align-content: center;
         input {
-        border: none;
-        margin: 0;
-        width: 50%;
-        padding-left: 20px;
-        height: 30px;
-        font-size: 16px;
-        color: $icon-background-color;
-        &:nth-of-type(2){
-          border-left: 2px solid $border-edge-color;
-        }
+          border: none;
+          margin: 0;
+          width: 50%;
+          padding-left: 20px;
+          height: 30px;
+          font-size: 16px;
+          color: $icon-background-color;
+          &:nth-of-type(2) {
+            border-left: 2px solid $border-edge-color;
+          }
         }
         #icon_date {
           width: 30px;
@@ -61,7 +59,6 @@
           fill: $icon-background-color;
         }
       }
-
       .button-refresh {
         width: 45px;
         height: 45px;
@@ -73,7 +70,6 @@
         &:hover {
           opacity: 0.7;
         }
-
         #icon-refresh {
           fill: $border-edge-color;
           width: 20px;
@@ -83,47 +79,46 @@
     .content-wrapper {
       padding: 25px;
       width: 100%;
-    .content-general__table {
-      padding: 50px 20%;
-      table {
-        table-layout: fixed;
-        width: 100%;
-        cellpadding: 20px;
-        th {
-        font-weight: normal;
-        border-bottom: 2px solid $border-edge-color;
-      }
-
-      .counter {
-        width: 100%;
-        height: 50px;
-          .visit-deposit__label {
-            text-align: left;
+      .content-general__table {
+        padding: 50px 20%;
+        table {
+          table-layout: fixed;
+          width: 100%;
+          // cellpadding: 20px;
+          th {
+            font-weight: normal;
+            border-bottom: 2px solid $border-edge-color;
           }
-          .brake {
-            border: none;
-          }
-          .visit-deposit__number {
-            text-align: center;
-          }
-          .ftd-to__label {
-            text-align: left;
-          }
-          .ftd-to__number {
+          .counter {
+            width: 100%;
+            height: 50px;
+            .visit-deposit__label {
+              text-align: left;
+            }
+            .brake {
+              border: none;
+            }
+            .visit-deposit__number {
               text-align: center;
+            }
+            .ftd-to__label {
+              text-align: left;
+            }
+            .ftd-to__number {
+              text-align: center;
+            }
           }
+        }
       }
-    }
-    }
-    .content-general__chart {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0 10%;
-      img {
+      .content-general__chart {
         width: 100%;
-        height: 100%;
+        margin: 0 auto;
+        padding: 0 10%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
-}
 }
