@@ -10,4 +10,5 @@ function sidebarHide(){
 function sidebarOpen(){
   document.getElementById("sidebar_hide").style.display = "block";
   document.getElementById("hamburger-menu__hiden").style.display = "none";
+    document.getElementById("content-margin").style.margin = "50px 0 0 180px";
 }
