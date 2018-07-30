@@ -12,11 +12,20 @@ html {
 
 .home {
   li.home {
-      height: 50px;
-      display: block;
-      margin: 0;
-      opacity: 0.8;
-      border-left: 5px solid $active-refresh-color;
-      
+    background-color: #555555;
+    height: 50px; // display: flex;
+    margin: 0;
+    width: 195px;
+    // border-left: 5px solid $active-refresh-color;
+    opacity: 0.8;
+    &:before{
+      content:"";
+      position:absolute;
+      background-color:$active-refresh-color;
+      width: 5px;
+      height:100%;
+      left:0;
+      top:0;
+    }
   }
 }
