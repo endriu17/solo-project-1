@@ -10,10 +10,10 @@
 </head>
 
 <body class="home">
-  <div class="sidebar">
+  <div class="sidebar" id="sidebar_hide">
     <div class="sidebar-menu">
       <img class="img_logo" src="/images/sidebar_logo.jpg" alt="logo">
-      <a href="#">
+      <a href="#" onclick="return sidebarHide()">
         <div class="hamburger-menu">
           <img class="img_hamburger" src="/images/icon_hamburger.png" alt="hamburger">
         </div>
@@ -102,6 +102,13 @@
 
   <div class="topbar">
     <ul class="topbar-list">
+      <li id="hamburger-menu__hiden">
+        <a href="#" onclick="return sidebarOpen()">
+          <div >
+            <img class="img_hamburger" src="/images/hamburger-menu__black.png" alt="hamburger">
+          </div>
+        </a>
+      </li>
       <li class="topbar--item">
         <div class="wallet">
           <svg id="icon-wallet" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -15 20 50" style="enable-background:new 0 0 17 18;" xml:space="preserve">
@@ -148,7 +155,7 @@
       </li>
     </ul>
   </div>
-  <div class="content">
+  <div class="content" id="content-margin">
     <div class="content-general">
       <div class="content-general__header">
         <h1>Details</h1>
@@ -156,6 +163,7 @@
 
     </div>
   </div>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
