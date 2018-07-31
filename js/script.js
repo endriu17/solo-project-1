@@ -1,5 +1,3 @@
-// document.getElementById("sidebar_hide--link").addEventListener("click", sidebarHide);
-
 function sidebarHide(){
   document.getElementById("sidebar_hide").style.display = "none";
   document.getElementById("hamburger-menu__hiden").style.display = "block";
