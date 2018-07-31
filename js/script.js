@@ -12,10 +12,9 @@ function sidebarOpen() {
 }
 
 
-  var linksContent = document.querySelector('link[rel="import"]');
+var linksContent = document.querySelector('link[rel="import"]');
 
-  var generalContent = linksContent.import.querySelector('#content-links_export');
-  var clone = document.importNode(generalContent, true);
-  
-  document.querySelector('#content-links_import').appendChild(clone);
-  
+var generalContent = linksContent.import.querySelector('#content-links_export');
+var clone = document.importNode(generalContent, true);
+
+document.querySelector('#content-links_import').appendChild(clone);
