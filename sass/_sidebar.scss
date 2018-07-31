@@ -66,7 +66,6 @@
           }
         }
         &:hover {
-          // opacity: 0.8; // 
           a {
             color: $button-font-color;
             #icon-general {
@@ -92,6 +91,7 @@
       color: $icon-background-color;
       font-size: 14px;
       padding: 20px;
+      text-align: center;
     }
     .manager__status {
       padding: 5px;

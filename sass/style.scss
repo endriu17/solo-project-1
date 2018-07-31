@@ -3,7 +3,7 @@
 @import "layout";
 @import "sidebar";
 @import "topbar";
-/* @import "_normalize"; */
+@import "_normalize";
 
 // CONTENT SECTION
 .content {
@@ -12,6 +12,9 @@
   padding: 20px;
   background-color: #f2f2f2;
   color: $icon-background-color;
+  #content-links_import {
+    margin-top: 20px;
+  }
   .content-general {
     background-color: #ffffff;
     width: 100%;
@@ -84,7 +87,6 @@
         table {
           table-layout: fixed;
           width: 100%;
-          // cellpadding: 20px;
           th {
             font-weight: normal;
             border-bottom: 2px solid $border-edge-color;
