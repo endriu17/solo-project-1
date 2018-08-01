@@ -1,10 +1,10 @@
 .topbar {
   height: 50px;
   width: 100%;
-  background-color: #fff;
+  background-color: $content-background_color;
   margin: 0;
   font-family: $brand-font;
-  color: $icon-background-color;
+  color: $font-icon_color;
   position: fixed;
   display: block;
   top: 0;
@@ -24,7 +24,7 @@
       a {
         width: 50px;
         height: 40px;
-        background-color: #ffffff;
+        background-color: $content-background_color;
         margin: 0;
         position: relative;
         top: 5px;
@@ -62,11 +62,11 @@
           padding: 0 10px;
         }
         #icon-wallet {
-          fill: $icon-background-color;
+          fill: $font-icon_color;
           width: 20px;
         }
         #icon-arrow-down-sm {
-          fill: $icon-background-color;
+          fill: $font-icon_color;
           width: 15px;
         }
       }
@@ -81,13 +81,13 @@
           border-radius: 50%;
           height: 7px;
           width: 7px;
-          background-color: $active-refresh-color;
+          background-color: $active-refresh_color;
           position: absolute;
           top: 14px;
           left: 22px;
         }
         #icon-notification {
-          fill: $icon-background-color;
+          fill: $font-icon_color;
           width: 20px;
         }
       }
@@ -98,17 +98,17 @@
         @extend .border-left-edge;
         padding: 0 10px;
         #icon-profile {
-          fill: $icon-background-color;
+          fill: $font-icon_color;
           width: 20px;
         }
         a {
           text-decoration: none;
           font-size: 14px;
           width: 130px;
-          color: $profile-link-color;
+          color: $profile-link_color;
           padding: 0 5px;
           &:hover {
-            color: $active-refresh-color;
+            color: $active-refresh_color;
           }
         }
       }
@@ -119,10 +119,10 @@
         @extend .border-left-edge;
         padding-left: 20px;
         #icon-quit {
-          fill: $icon-background-color;
+          fill: $font-icon_color;
           width: 20px;
           &:hover {
-            fill: $active-refresh-color;
+            fill: $active-refresh_color;
           }
         }
       }

@@ -115,6 +115,10 @@ html {
   text-align: center;
 }
 
+.sidebar .sidebar-nav ul .sidebar-link:hover {
+  opacity: 0.8;
+}
+
 .sidebar .sidebar-nav ul .sidebar-link:hover a {
   color: #fff;
 }
@@ -167,7 +171,7 @@ html {
 }
 
 .sidebar .sidebar-manager__info .manager__status a:hover {
-  color: #ffa200;
+  color: #f58220;
 }
 
 .sidebar .sidebar-manager__info .manager__status .manager__online {
@@ -183,7 +187,7 @@ html {
 .topbar {
   height: 50px;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0;
   font-family: "Open Sans", Helvetica, Arial;
   color: #808080;
@@ -273,7 +277,7 @@ html {
   border-radius: 50%;
   height: 7px;
   width: 7px;
-  background-color: #ffa200;
+  background-color: #f58220;
   position: absolute;
   top: 14px;
   left: 22px;
@@ -304,7 +308,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .profile a:hover {
-  color: #ffa200;
+  color: #f58220;
 }
 
 .topbar .topbar-list .topbar--item .quit {
@@ -319,7 +323,148 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .quit #icon-quit:hover {
-  fill: #ffa200;
+  fill: #f58220;
+}
+
+.content {
+  display: block;
+  margin: 50px 0 0 200px;
+  padding: 20px;
+  background-color: #F2F2F2;
+  color: #808080;
+}
+
+.content #content-links_import {
+  margin-top: 20px;
+}
+
+.content .content-general {
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.125);
+}
+
+.content .content-general .content-general__header h1 {
+  color: #808080;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 20px;
+  margin: 0;
+}
+
+.content .content-general .content-general__date {
+  display: flex;
+  border-top: 2px solid #F2F2F2;
+  border-bottom: 2px solid #F2F2F2;
+  height: 50px;
+  margin: 0 auto;
+  padding: 50px 25%;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.content .content-general .content-general__date form {
+  display: flex;
+  padding: 10px 10px 10px 0;
+  border: 2px solid #F2F2F2;
+  align-content: center;
+}
+
+.content .content-general .content-general__date form input {
+  border: none;
+  margin: 0;
+  width: 50%;
+  padding-left: 20px;
+  height: 30px;
+  font-size: 16px;
+  color: #808080;
+}
+
+.content .content-general .content-general__date form input:nth-of-type(2) {
+  border-left: 2px solid #F2F2F2;
+}
+
+.content .content-general .content-general__date form #icon_date {
+  width: 30px;
+  height: 30px;
+  fill: #808080;
+}
+
+.content .content-general .content-general__date .button-refresh {
+  width: 45px;
+  height: 45px;
+  background-color: #f58220;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 15px;
+}
+
+.content .content-general .content-general__date .button-refresh:hover {
+  opacity: 0.7;
+}
+
+.content .content-general .content-general__date .button-refresh #icon-refresh {
+  fill: #F2F2F2;
+  width: 20px;
+}
+
+.content .content-general .content-wrapper {
+  padding: 25px;
+  width: 100%;
+}
+
+.content .content-general .content-wrapper .content-general__table {
+  padding: 50px 20%;
+}
+
+.content .content-general .content-wrapper .content-general__table table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.content .content-general .content-wrapper .content-general__table table th {
+  font-weight: normal;
+  border-bottom: 2px solid #F2F2F2;
+}
+
+.content .content-general .content-wrapper .content-general__table table .counter {
+  width: 100%;
+  height: 50px;
+}
+
+.content .content-general .content-wrapper .content-general__table table .counter .visit-deposit__label {
+  text-align: left;
+}
+
+.content .content-general .content-wrapper .content-general__table table .counter .brake {
+  border: none;
+}
+
+.content .content-general .content-wrapper .content-general__table table .counter .visit-deposit__number {
+  text-align: right;
+  color: #000000;
+}
+
+.content .content-general .content-wrapper .content-general__table table .counter .ftd-to__label {
+  text-align: left;
+}
+
+.content .content-general .content-wrapper .content-general__table table .counter .ftd-to__number {
+  text-align: right;
+  color: #000000;
+}
+
+.content .content-general .content-wrapper .content-general__chart {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.content .content-general .content-wrapper .content-general__chart img {
+  width: 100%;
+  height: 100%;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -652,145 +797,6 @@ template {
    */
 [hidden] {
   display: none;
-}
-
-.content {
-  display: block;
-  margin: 50px 0 0 200px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  color: #808080;
-}
-
-.content #content-links_import {
-  margin-top: 20px;
-}
-
-.content .content-general {
-  background-color: #ffffff;
-  width: 100%;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.125);
-}
-
-.content .content-general .content-general__header h1 {
-  color: #808080;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 20px;
-  margin: 0;
-}
-
-.content .content-general .content-general__date {
-  display: flex;
-  border-top: 2px solid #F2F2F2;
-  border-bottom: 2px solid #F2F2F2;
-  height: 50px;
-  margin: 0 auto;
-  padding: 50px 25%;
-  background-color: #ffffff;
-  width: 100%;
-}
-
-.content .content-general .content-general__date form {
-  display: flex;
-  padding: 10px 10px 10px 0;
-  border: 2px solid #F2F2F2;
-  align-content: center;
-}
-
-.content .content-general .content-general__date form input {
-  border: none;
-  margin: 0;
-  width: 50%;
-  padding-left: 20px;
-  height: 30px;
-  font-size: 16px;
-  color: #808080;
-}
-
-.content .content-general .content-general__date form input:nth-of-type(2) {
-  border-left: 2px solid #F2F2F2;
-}
-
-.content .content-general .content-general__date form #icon_date {
-  width: 30px;
-  height: 30px;
-  fill: #808080;
-}
-
-.content .content-general .content-general__date .button-refresh {
-  width: 45px;
-  height: 45px;
-  background-color: #f58220;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  margin-left: 15px;
-}
-
-.content .content-general .content-general__date .button-refresh:hover {
-  opacity: 0.7;
-}
-
-.content .content-general .content-general__date .button-refresh #icon-refresh {
-  fill: #F2F2F2;
-  width: 20px;
-}
-
-.content .content-general .content-wrapper {
-  padding: 25px;
-  width: 100%;
-}
-
-.content .content-general .content-wrapper .content-general__table {
-  padding: 50px 20%;
-}
-
-.content .content-general .content-wrapper .content-general__table table {
-  table-layout: fixed;
-  width: 100%;
-}
-
-.content .content-general .content-wrapper .content-general__table table th {
-  font-weight: normal;
-  border-bottom: 2px solid #F2F2F2;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter {
-  width: 100%;
-  height: 50px;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .visit-deposit__label {
-  text-align: left;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .brake {
-  border: none;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .visit-deposit__number {
-  text-align: center;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .ftd-to__label {
-  text-align: left;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .ftd-to__number {
-  text-align: center;
-}
-
-.content .content-general .content-wrapper .content-general__chart {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10%;
-}
-
-.content .content-general .content-wrapper .content-general__chart img {
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
