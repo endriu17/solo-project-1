@@ -2,8 +2,9 @@
 /* Font sizes */
 /* Fonts */
 /* massages */
-.flex-center, .topbar .topbar-list .topbar--item, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .wallet .money, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit, .content .content-general .content-general__date {
+.flex-center, .topbar .topbar-list .topbar--item, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .wallet .money, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit, .content .content-general .content-general__date, .content .content-general .content-general__date form {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -73,7 +74,7 @@ html {
 }
 
 .sidebar .sidebar-menu a .hamburger-menu:hover {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .sidebar .sidebar-menu a .hamburger-menu .img_hamburger {
@@ -120,11 +121,11 @@ html {
 }
 
 .sidebar .sidebar-nav ul .sidebar-link:hover a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .sidebar .sidebar-nav ul .sidebar-link:hover a #icon-general {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .sidebar .sidebar-nav ul .sidebar-link_end {
@@ -355,11 +356,12 @@ html {
 
 .content .content-general .content-general__date {
   display: flex;
+  flex-wrap: wrap;
   border-top: 2px solid #F2F2F2;
   border-bottom: 2px solid #F2F2F2;
-  height: 50px;
-  margin: 0 auto;
-  padding: 50px 25%;
+  min-height: 50px;
+  margin: 0;
+  padding: 50px 0;
   background-color: #ffffff;
   width: 100%;
 }
@@ -368,7 +370,6 @@ html {
   display: flex;
   padding: 10px 10px 10px 0;
   border: 2px solid #F2F2F2;
-  align-content: center;
 }
 
 .content .content-general .content-general__date form input {
@@ -398,7 +399,7 @@ html {
   border: none;
   border-radius: 5px;
   outline: none;
-  margin-left: 15px;
+  margin: auto 15px;
 }
 
 .content .content-general .content-general__date .button-refresh:hover {
@@ -407,7 +408,7 @@ html {
 
 .content .content-general .content-general__date .button-refresh #icon-refresh {
   fill: #F2F2F2;
-  width: 20px;
+  width: 50%;
 }
 
 .content .content-general .content-wrapper {
@@ -415,45 +416,30 @@ html {
   width: 100%;
 }
 
-.content .content-general .content-wrapper .content-general__table {
-  padding: 50px 20%;
+.content .content-general .content-wrapper .content-general_counters {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20%;
 }
 
-.content .content-general .content-wrapper .content-general__table table {
-  table-layout: fixed;
-  width: 100%;
+.content .content-general .content-wrapper .content-general_counters .counter {
+  min-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.content .content-general .content-wrapper .content-general__table table th {
-  font-weight: normal;
-  border-bottom: 2px solid #F2F2F2;
+.content .content-general .content-wrapper .content-general_counters .counter h4, .content .content-general .content-wrapper .content-general_counters .counter p {
+  margin: 0;
+  padding: 0;
 }
 
-.content .content-general .content-wrapper .content-general__table table .counter {
-  width: 100%;
-  height: 50px;
+.content .content-general .content-wrapper .content-general_counters .counter p {
+  justify-items: flex-end;
 }
 
-.content .content-general .content-wrapper .content-general__table table .counter .visit-deposit__label {
-  text-align: left;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .brake {
-  border: none;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .visit-deposit__number {
-  text-align: right;
-  color: #000000;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .ftd-to__label {
-  text-align: left;
-}
-
-.content .content-general .content-wrapper .content-general__table table .counter .ftd-to__number {
-  text-align: right;
-  color: #000000;
+.content .content-general .content-wrapper .content-general_counters .counter h4 {
+  justify-items: flex-start;
 }
 
 .content .content-general .content-wrapper .content-general__chart {
