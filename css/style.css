@@ -553,6 +553,10 @@ html {
   margin-right: 20px;
 }
 
+.content .content-general .content-links table tr td #icon-trash:hover {
+  fill: #f58220;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
