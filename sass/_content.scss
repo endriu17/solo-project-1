@@ -7,6 +7,9 @@
   #content-links_import {
     margin-top: 20px;
   }
+
+/*  CONTENT GENERAL */
+
   .content-general {
     background-color: $content-background_color;
     width: 100%;
@@ -22,7 +25,7 @@
       }
       &:after {
         content: "";
-        border-top: 2px solid $border-edge_color;
+        border-top: 1px solid $border-edge_color;
         display: block;
       }
     }
@@ -112,6 +115,9 @@
         }
       }
     }
+
+/*  CONTENT LINKS */
+
     .content-links {
       display: block;
       width: 100%;
@@ -121,7 +127,7 @@
       button {
         height: 40px;
         width: 100px;
-        margin: 0 auto; // padding: 0 auto;
+        margin: 0 auto;
         outline: none;
         border: none;
         color: $font-hover_color;
@@ -190,6 +196,63 @@
                 fill: $active-refresh_color;
               }
             }
+          }
+        }
+      }
+    }
+
+/*  CONTENT PERSONAL DATA */
+
+    .content-personaldata {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 20px 0 0;
+      margin: 0;
+      form {
+        display: block;
+        width: 100%;
+        &:after {
+          content: "";
+          border-bottom: 1px solid $border-edge_color;
+          display: block;
+          margin-top: 30px;
+        }
+        .field {
+          margin: 30px auto;
+          width: 40%;
+          div {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            label {
+              padding: 10px 0;
+              width: 40%;
+              color: $font-icon_color;
+              font-weight: bold;
+              text-align: left;
+            }
+            input {
+              width: 60%;
+              padding: 10px 20px;
+              border: 1px solid $border-edge_color;
+            }
+          }
+        }
+      }
+      .btn-personaldata {
+        padding: 30px 0;
+        button {
+          height: 40px;
+          width: 100px;
+          margin: 0 auto;
+          outline: none;
+          border: none;
+          color: $font-hover_color;
+          border-radius: 3px;
+          background-color: $active-refresh_color;
+          &:hover {
+            opacity: 0.8;
           }
         }
       }

@@ -14,17 +14,20 @@
     .modal {
         width: 350px;
         max-width: 50%;
-        height: 180px;
+        height: 130px;
         margin: auto;
         background-color: #ffffff;
         position: relative;
-        padding: 0 0 10px 0;
+        padding: 0;
         display: none;
         color: $font-icon_color;
         h4 {
             text-align: center;
+            align-items: center;
             width: 100%;
-            padding: 10px 0;
+            padding: 20px 0 15px;
+            margin: 0;
+            height: 20px;
             &:after {
                 content: "";
                 border: 1px solid $border-edge_color;
@@ -35,9 +38,9 @@
         .button-wrapper {
             display: flex;
             justify-content: flex-end;
-            margin: 0;
+            margin: 40px 0 0;
             width: 100%;
-            
+            padding: 0 0 10px;
             .js--cancel-modal {
                 background-color: $font-icon_color;
             }
@@ -45,7 +48,7 @@
                 background-color: $active-refresh_color;
             }
             button {
-                height: 40px;
+                height: 35px;
                 width: 100px;
                 margin: 0 20px 0 0;
                 outline: none;
@@ -56,7 +59,6 @@
                     opacity: 0.8;
                 }
             }
-           
         }
         .btn-close {
             position: absolute;
