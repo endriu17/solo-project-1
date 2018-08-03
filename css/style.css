@@ -9,7 +9,7 @@
 }
 
 .border-left-edge, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit {
-  border-left: 2px solid #e2e1e1;
+  border-left: 1px solid #e2e1e1;
 }
 
 * {
@@ -366,8 +366,8 @@ html {
 .content .content-general .content-general__date {
   display: flex;
   flex-wrap: wrap;
-  border-top: 2px solid #e2e1e1;
-  border-bottom: 2px solid #e2e1e1;
+  border-top: 1px solid #e2e1e1;
+  border-bottom: 1px solid #e2e1e1;
   min-height: 50px;
   margin: 0;
   padding: 50px 0;
@@ -378,7 +378,7 @@ html {
 .content .content-general .content-general__date form {
   display: flex;
   padding: 10px 10px 10px 0;
-  border: 2px solid #e2e1e1;
+  border: 1px solid #e2e1e1;
 }
 
 .content .content-general .content-general__date form input {
@@ -392,7 +392,7 @@ html {
 }
 
 .content .content-general .content-general__date form input:nth-of-type(2) {
-  border-left: 2px solid #e2e1e1;
+  border-left: 1px solid #e2e1e1;
 }
 
 .content .content-general .content-general__date form #icon_date {
@@ -442,14 +442,6 @@ html {
 .content .content-general .content-wrapper .content-general_counters .counter p {
   margin: 0;
   padding: 0;
-}
-
-.content .content-general .content-wrapper .content-general_counters .counter p {
-  justify-items: flex-end;
-}
-
-.content .content-general .content-wrapper .content-general_counters .counter h4 {
-  justify-items: flex-start;
 }
 
 .content .content-general .content-wrapper .content-general__chart {
