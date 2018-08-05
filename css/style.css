@@ -455,15 +455,15 @@ html {
   height: 100%;
 }
 
-.content .content-general .content-links {
+.content .content-general .content-links-banners {
   display: block;
   width: 100%;
-  padding: 25px 15%;
+  padding: 40px 15%;
   justify-content: center;
   text-align: center;
 }
 
-.content .content-general .content-links button {
+.content .content-general .content-links-banners button {
   height: 40px;
   width: 100px;
   margin: 0 auto;
@@ -474,56 +474,56 @@ html {
   background-color: #f58220;
 }
 
-.content .content-general .content-links button:hover {
+.content .content-general .content-links-banners button:hover {
   opacity: 0.8;
 }
 
-.content .content-general .content-links table {
+.content .content-general .content-links-banners table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
 }
 
-.content .content-general .content-links table tr {
+.content .content-general .content-links-banners table tr {
   border-bottom: 1px solid #e2e1e1;
   border-top: 1px solid #e2e1e1;
   display: flex;
   justify-content: flex-start;
 }
 
-.content .content-general .content-links table tr th {
+.content .content-general .content-links-banners table tr th {
   width: 40%;
   text-align: left;
   padding-left: 15px;
   color: #9f9f9f;
 }
 
-.content .content-general .content-links table tr:hover {
+.content .content-general .content-links-banners table tr:hover {
   background-color: #e2e1e1;
 }
 
-.content .content-general .content-links table tr:hover a {
+.content .content-general .content-links-banners table tr:hover a {
   color: #f58220;
 }
 
-.content .content-general .content-links table tr:hover a #icon-links {
+.content .content-general .content-links-banners table tr:hover a #icon-links {
   fill: #f58220;
   visibility: visible;
 }
 
-.content .content-general .content-links table tr:hover #icon-trash {
+.content .content-general .content-links-banners table tr:hover #icon-trash {
   visibility: visible;
   cursor: pointer;
 }
 
-.content .content-general .content-links table tr td {
+.content .content-general .content-links-banners table tr td {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60%;
 }
 
-.content .content-general .content-links table tr td a {
+.content .content-general .content-links-banners table tr td a {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -532,7 +532,7 @@ html {
   margin-left: 20px;
 }
 
-.content .content-general .content-links table tr td a #icon-links {
+.content .content-general .content-links-banners table tr td a #icon-links {
   margin: 0 20px;
   width: 17px;
   height: 17px;
@@ -540,7 +540,7 @@ html {
   visibility: hidden;
 }
 
-.content .content-general .content-links table tr td #icon-trash {
+.content .content-general .content-links-banners table tr td #icon-trash {
   width: 17px;
   height: 17px;
   fill: #9f9f9f;
@@ -548,7 +548,7 @@ html {
   margin-right: 20px;
 }
 
-.content .content-general .content-links table tr td #icon-trash:hover {
+.content .content-general .content-links-banners table tr td #icon-trash:hover {
   fill: #f58220;
 }
 
