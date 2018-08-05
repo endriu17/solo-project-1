@@ -66,7 +66,7 @@ html {
 .sidebar .sidebar-menu a .hamburger-menu {
   width: 30px;
   height: 30px;
-  background-color: #808080;
+  background-color: #9f9f9f;
   margin: 0;
   position: relative;
   top: -45px;
@@ -101,7 +101,7 @@ html {
 .sidebar .sidebar-nav ul .sidebar-link a {
   text-decoration: none;
   font-family: "Open Sans", Helvetica, Arial;
-  color: #808080;
+  color: #9f9f9f;
   font-size: 15px;
   text-align: center;
   line-height: 50px;
@@ -110,7 +110,7 @@ html {
 }
 
 .sidebar .sidebar-nav ul .sidebar-link a #icon-general {
-  fill: #808080;
+  fill: #9f9f9f;
   width: 20px;
   line-height: 20px;
   text-align: center;
@@ -139,11 +139,11 @@ html {
   font-family: "Open Sans", Helvetica, Arial;
   background-color: #000000;
   margin: 0;
-  border-top: 1px solid #808080;
+  border-top: 1px solid #9f9f9f;
 }
 
 .sidebar .sidebar-manager__info .manager__header {
-  color: #808080;
+  color: #9f9f9f;
   font-size: 14px;
   padding: 20px;
   text-align: center;
@@ -191,7 +191,7 @@ html {
   background-color: #ffffff;
   margin: 0;
   font-family: "Open Sans", Helvetica, Arial;
-  color: #808080;
+  color: #9f9f9f;
   position: fixed;
   display: block;
   top: 0;
@@ -258,12 +258,12 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .wallet #icon-wallet {
-  fill: #808080;
+  fill: #9f9f9f;
   width: 20px;
 }
 
 .topbar .topbar-list .topbar--item .wallet #icon-arrow-down-sm {
-  fill: #808080;
+  fill: #9f9f9f;
   width: 15px;
 }
 
@@ -285,7 +285,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .notification #icon-notification {
-  fill: #808080;
+  fill: #9f9f9f;
   width: 20px;
 }
 
@@ -296,7 +296,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .profile #icon-profile {
-  fill: #808080;
+  fill: #9f9f9f;
   width: 20px;
 }
 
@@ -319,7 +319,7 @@ html {
 }
 
 .topbar .topbar-list .topbar--item .quit #icon-quit {
-  fill: #808080;
+  fill: #9f9f9f;
   width: 20px;
 }
 
@@ -332,7 +332,7 @@ html {
   margin: 50px 0 0 200px;
   padding: 20px;
   background-color: #e2e1e1;
-  color: #808080;
+  color: #9f9f9f;
   /*  CONTENT GENERAL */
 }
 
@@ -349,7 +349,7 @@ html {
 }
 
 .content .content-general .content-general__header h1 {
-  color: #808080;
+  color: #9f9f9f;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 500;
@@ -388,7 +388,7 @@ html {
   padding-left: 20px;
   height: 30px;
   font-size: 16px;
-  color: #808080;
+  color: #9f9f9f;
 }
 
 .content .content-general .content-general__date form input:nth-of-type(2) {
@@ -398,7 +398,7 @@ html {
 .content .content-general .content-general__date form #icon_date {
   width: 30px;
   height: 30px;
-  fill: #808080;
+  fill: #9f9f9f;
 }
 
 .content .content-general .content-general__date .button-refresh {
@@ -495,7 +495,7 @@ html {
   width: 40%;
   text-align: left;
   padding-left: 15px;
-  color: #808080;
+  color: #9f9f9f;
 }
 
 .content .content-general .content-links table tr:hover {
@@ -536,14 +536,14 @@ html {
   margin: 0 20px;
   width: 17px;
   height: 17px;
-  fill: #808080;
+  fill: #9f9f9f;
   visibility: hidden;
 }
 
 .content .content-general .content-links table tr td #icon-trash {
   width: 17px;
   height: 17px;
-  fill: #808080;
+  fill: #9f9f9f;
   visibility: hidden;
   margin-right: 20px;
 }
@@ -586,7 +586,7 @@ html {
 .content .content-general .content-personaldata form .field div label {
   padding: 10px 0;
   width: 40%;
-  color: #808080;
+  color: #9f9f9f;
   font-weight: bold;
   text-align: left;
 }
@@ -595,6 +595,11 @@ html {
   width: 60%;
   padding: 10px 20px;
   border: 1px solid #e2e1e1;
+  outline: none;
+}
+
+.content .content-general .content-personaldata form .field div input:focus {
+  box-shadow: 0 0 5px #ffa200;
 }
 
 .content .content-general .content-personaldata .btn-personaldata {
@@ -948,93 +953,214 @@ template {
   display: none;
 }
 
-.overlay {
+#modalLogin {
+  display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  z-index: 19950;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
   overflow: auto;
-  padding: 30px;
-  display: none;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.349);
 }
 
-.overlay .modal {
-  width: 350px;
-  max-width: 50%;
-  height: 130px;
-  margin: auto;
-  background-color: #ffffff;
+#modalLogin .modal-content {
+  margin: 10% auto;
+  padding: 20px 0 0;
+  background-color: #FFF;
+  width: 40%;
   position: relative;
-  padding: 0;
-  display: none;
-  color: #808080;
-}
-
-.overlay .modal h4 {
-  text-align: center;
-  align-items: center;
-  width: 100%;
-  padding: 20px 0 15px;
-  margin: 0;
-  height: 20px;
-}
-
-.overlay .modal h4:after {
-  content: "";
-  border: 1px solid #e2e1e1;
-  margin-top: 20px;
   display: block;
 }
 
-.overlay .modal .button-wrapper {
+#modalLogin .modal-content .modal-header:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e2e1e1;
+}
+
+#modalLogin .modal-content .modal-header span {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #9f9f9f;
+  display: block;
+}
+
+#modalLogin .modal-content .modal-header span:hover {
+  color: #f58220;
+}
+
+#modalLogin .modal-content .modal-header h4 {
+  margin: 0;
+  color: #9f9f9f;
+  padding: 0 20px 15px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+#modalLogin .modal-content .modal-body {
+  padding: 40px 20px;
   display: flex;
-  justify-content: flex-end;
-  margin: 40px 0 0;
-  width: 100%;
-  padding: 0 0 10px;
+  justify-content: space-around;
 }
 
-.overlay .modal .button-wrapper .js--cancel-modal {
-  background-color: #808080;
-}
-
-.overlay .modal .button-wrapper .js--close-modal {
-  background-color: #f58220;
-}
-
-.overlay .modal .button-wrapper button {
-  height: 35px;
-  width: 100px;
-  margin: 0 20px 0 0;
-  outline: none;
-  border: none;
-  color: #ffffff;
-  border-radius: 3px;
-}
-
-.overlay .modal .button-wrapper button:hover {
+#modalLogin .modal-content .modal-body input {
+  color: #9f9f9f;
+  font-size: 16px;
   opacity: 0.8;
 }
 
-.overlay .modal .btn-close {
+#modalLogin .modal-content .modal-body .input-user {
+  position: relative;
+  margin-right: 10px;
+}
+
+#modalLogin .modal-content .modal-body .input-user #user-name {
+  outline: none;
+  border: 1px solid #e2e1e1;
+  height: 35px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+#modalLogin .modal-content .modal-body .input-user #user-name:focus {
+  border-color: #f58220;
+}
+
+#modalLogin .modal-content .modal-body .input-user #icon-user {
   position: absolute;
+  fill: #9f9f9f;
+  height: 20px;
+  width: 20px;
+  top: 11px;
+  left: 5px;
+}
+
+#modalLogin .modal-content .modal-body .input-password {
+  position: relative;
+  margin-right: 10px;
+}
+
+#modalLogin .modal-content .modal-body .input-password #user-pwr {
+  outline: none;
+  border: 1px solid #e2e1e1;
+  height: 35px;
+  width: 100%;
+  padding-left: 40px;
+}
+
+#modalLogin .modal-content .modal-body .input-password #user-pwr:focus {
+  border-color: #f58220;
+}
+
+#modalLogin .modal-content .modal-body .input-password #icon-password {
+  position: absolute;
+  fill: #9f9f9f;
+  height: 20px;
+  width: 25px;
+  top: 11px;
+  left: 3px;
+}
+
+#modalLogin .modal-content .modal-body button {
+  outline: none;
+  background-color: #f58220;
+  border: none;
+  height: 35px;
+  width: 20%;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+#modalLogin .modal-content .modal-body button:hover {
+  opacity: 0.8;
+}
+
+#modalLogin .modal-content .modal-footer h4 {
+  margin: 0;
+  color: #9f9f9f;
+  padding: 0 20px;
+}
+
+#modalQuit {
+  display: none;
+  position: fixed;
+  z-index: 19950;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   top: 0;
-  right: 0;
-  padding: 5px 10px;
-  cursor: pointer;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.overlay.show {
-  display: flex;
-}
-
-.modal.show {
+#modalQuit .modal-content {
+  margin: 10% auto;
+  padding: 0;
+  background-color: #FFF;
+  width: 25%;
+  position: relative;
   display: block;
+}
+
+#modalQuit .modal-content .modal-header {
+  margin: 0;
+}
+
+#modalQuit .modal-content .modal-header:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #e2e1e1;
+}
+
+#modalQuit .modal-content .modal-header h4 {
+  margin: 0;
+  color: #9f9f9f;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+#modalQuit .modal-content .modal-body {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#modalQuit .modal-content .modal-body #quitCancelBtn {
+  background-color: #9f9f9f;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+#modalQuit .modal-content .modal-body #quitButton {
+  background-color: #f58220;
+  color: #ffffff;
+}
+
+#modalQuit .modal-content .modal-body button {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 30%;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+#modalQuit .modal-content .modal-body button:hover {
+  opacity: 0.8;
+}
+
+#modalQuit .modal-content .modal-footer h4 {
+  margin: 0;
+  color: #9f9f9f;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

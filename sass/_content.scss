@@ -230,6 +230,11 @@
               width: 60%;
               padding: 10px 20px;
               border: $border-style;
+              outline: none;
+              &:focus {
+                // background-color: $border-edge_color;
+                box-shadow: 0 0 5px $home-edge_color;
+              }
             }
           }
         }

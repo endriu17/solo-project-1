@@ -1,0 +1,136 @@
+#modalLogin {
+  display: none;
+  position: fixed;
+  z-index: 19950;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.349);
+
+  .modal-content {
+    margin: 10% auto;
+    padding: 20px 0 0;
+    background-color: #FFF;
+    width: 40%;
+    position: relative;
+    display: block;
+
+    .modal-header {
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: $border-style;
+      }
+
+      span {
+        position: absolute;
+        top: 3px;
+        right: 4px;
+        font-size: 26px;
+        cursor: pointer;
+        color: $font-icon_color;
+        display: block;
+
+        &:hover {
+          color: $active-refresh_color;
+        }
+      }
+
+      h4 {
+        margin: 0;
+        color: $font-icon_color;
+        padding: 0 20px 15px;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: $brand-font;
+      }
+    }
+
+    .modal-body {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-around;
+
+      input {
+        color: $font-icon_color;
+        font-size: 16px;
+        opacity: 0.8;
+      }
+
+      .input-user {
+        position: relative;
+        margin-right: 10px;
+
+        #user-name {
+          outline: none;
+          border: $border-style;
+          height: 35px;
+          width: 100%;
+          padding-left: 40px;
+
+          &:focus {
+            border-color: $active-refresh_color;
+          }
+        }
+
+        #icon-user {
+          position: absolute;
+          fill: $font-icon_color;
+          height: 20px;
+          width: 20px;
+          top: 11px;
+          left: 5px;
+        }
+      }
+
+      .input-password {
+        position: relative;
+        margin-right: 10px;
+
+        #user-pwr {
+          outline: none;
+          border: $border-style;
+          height: 35px;
+          width: 100%;
+          padding-left: 40px;
+          &:focus {
+            border-color: $active-refresh_color;
+          }
+        }
+
+        #icon-password {
+          position: absolute;
+          fill: $font-icon_color;
+          height: 20px;
+          width: 25px;
+          top: 11px;
+          left: 3px;
+        }
+      }
+
+      button {
+        outline: none;
+        background-color: $active-refresh_color;
+        border: none;
+        height: 35px;
+        width: 20%;
+        border-radius: 3px;
+        color: $font-hover_color;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .modal-footer {
+      h4 {
+        margin: 0;
+        color: $font-icon_color;
+        padding: 0 20px;
+      }
+    }
+  }
+}

@@ -71,49 +71,106 @@ var clone = document.importNode(generalContent, true);
 
 document.querySelector('#content-links_import').appendChild(clone);
 
-// modal functions
+// MODALS FUNCTIONS
 
-function closeModal() {
-  document.getElementById('overlay').classList.remove('show')
+// modal LOGIN functions
+// ---get modal, open modal link, close modal button
+var modalLogin = document.getElementById('modalLogin');
+var loginOpen = document.getElementById('loginLink');
+var closeBtn = document.getElementById('loginCloseBtn');
+var loginBtn = document.getElementById('loginBtn');
+// ---listen for open click, close click, outside click
+loginOpen.addEventListener('click', openLoginModal);
+closeBtn.addEventListener('click', closeLoginModal);
+loginBtn.addEventListener('click', closeLoginModal);
+window.addEventListener('click', outsideLoginClick);
+// ---functions open, close, outside click for modal LOGIN
+function openLoginModal(){
+  modalLogin.style.display = 'block';
+}
+function closeLoginModal(){
+  modalLogin.style.display = 'none';
+}
+function outsideLoginClick(e){
+  if(e.target == modalLogin){
+    modalLogin.style.display = 'none';
+  }
+}
+// modal QUIT functions
+// ---get modal, open modal button, close modal, cancel btn
+var modalQuit = document.getElementById('modalQuit');
+var quitModalOpen = document.getElementById('quitModalOpen');
+var quitCancelBtn = document.getElementById('quitCancelBtn');
+var quitButton = document.getElementById('quitButton');
+// ---listen for open click, cancel click, close click,
+quitModalOpen.addEventListener('click', openQuitModal);
+quitCancelBtn.addEventListener('click', closeQuitModal);
+quitButton.addEventListener('click', closeQuitModal);
+window.addEventListener('click', outsideQuitClick);
+// ---functions open, close, outside click for modal QUIT
+function openQuitModal(){
+  modalQuit.style.display = 'block';
+}
+function closeQuitModal(){
+  modalQuit.style.display = 'none';
+}
+function outsideQuitClick(e){
+  if(e.target == modalQuit){
+    modalQuit.style.display = 'none';
+  }
 }
 
-document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closeModal()
-  })
-})
-
-document.querySelectorAll('#overlay .js--cancel-modal').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closeModal()
-  })
-})
-
-document.querySelector('#overlay').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closeModal()
-  }
-})
-
+// ---function close modal if 'esc' key
 document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
-    closeModal()
+    closeLoginModal();
+    closeQuitModal()
   }
 })
 
-function openModal(modal) {
-  document.querySelectorAll('#overlay > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay').classList.add('show')
-  document.querySelector(modal).classList.add('show')
-}
+// function closeModal() {
+//   document.getElementById('overlay').classList.remove('show')
+// }
+
+// document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+//   btn.addEventListener('click', function(e) {
+//     e.preventDefault()
+//     closeModal()
+//   })
+// })
+
+// document.querySelectorAll('#overlay .js--cancel-modal').forEach(function(btn) {
+//   btn.addEventListener('click', function(e) {
+//     e.preventDefault()
+//     closeModal()
+//   })
+// })
+
+// document.querySelector('#overlay').addEventListener('click', function(e) {
+//   if(e.target === this) {
+//     closeModal()
+//   }
+// })
+
+// document.addEventListener('keyup', function(e) {
+//   if(e.keyCode === 27) {
+//     closeModal()
+//   }
+// })
+
+// function openModal(modal) {
+//   document.querySelectorAll('#overlay > *').forEach(function(modal) {
+//     modal.classList.remove('show')
+//   })
+//   document.querySelector('#overlay').classList.add('show')
+//   document.querySelector(modal).classList.add('show')
+// }
 
 // var quitModal = document.getElementById('quitModal');
+// var loginModal = document.getElementById('loginModal');
 
 // function openModal(modal) {
 //   document.getElementById("overlay").style.display = "flex";
 //   document.getElementById("quitModal").style.display = "block";
+//   document.getElementById("loginModal").style.display = "block";
 // }
