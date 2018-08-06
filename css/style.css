@@ -953,7 +953,7 @@ template {
   display: none;
 }
 
-#modalLogin {
+#modalLoginB {
   display: none;
   position: fixed;
   z-index: 19950;
@@ -965,7 +965,7 @@ template {
   background-color: rgba(0, 0, 0, 0.349);
 }
 
-#modalLogin .modal-content {
+#modalLoginB .modal-content {
   margin: 10% auto;
   padding: 20px 0 0;
   background-color: #FFF;
@@ -974,13 +974,13 @@ template {
   display: block;
 }
 
-#modalLogin .modal-content .modal-header:after {
+#modalLoginB .modal-content .modal-header:after {
   content: "";
   display: block;
   border-bottom: 1px solid #e2e1e1;
 }
 
-#modalLogin .modal-content .modal-header span {
+#modalLoginB .modal-content .modal-header span {
   position: absolute;
   top: 3px;
   right: 4px;
@@ -990,11 +990,11 @@ template {
   display: block;
 }
 
-#modalLogin .modal-content .modal-header span:hover {
+#modalLoginB .modal-content .modal-header span:hover {
   color: #f58220;
 }
 
-#modalLogin .modal-content .modal-header h4 {
+#modalLoginB .modal-content .modal-header h4 {
   margin: 0;
   color: #9f9f9f;
   padding: 0 20px 15px;
@@ -1003,24 +1003,24 @@ template {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
-#modalLogin .modal-content .modal-body {
+#modalLoginB .modal-content .modal-body {
   padding: 40px 20px;
   display: flex;
   justify-content: space-around;
 }
 
-#modalLogin .modal-content .modal-body input {
+#modalLoginB .modal-content .modal-body input {
   color: #9f9f9f;
   font-size: 16px;
   opacity: 0.8;
 }
 
-#modalLogin .modal-content .modal-body .input-user {
+#modalLoginB .modal-content .modal-body .input-user {
   position: relative;
   margin-right: 10px;
 }
 
-#modalLogin .modal-content .modal-body .input-user #user-name {
+#modalLoginB .modal-content .modal-body .input-user #user-name {
   outline: none;
   border: 1px solid #e2e1e1;
   height: 35px;
@@ -1028,11 +1028,11 @@ template {
   padding-left: 40px;
 }
 
-#modalLogin .modal-content .modal-body .input-user #user-name:focus {
+#modalLoginB .modal-content .modal-body .input-user #user-name:focus {
   border-color: #f58220;
 }
 
-#modalLogin .modal-content .modal-body .input-user #icon-user {
+#modalLoginB .modal-content .modal-body .input-user #icon-user {
   position: absolute;
   fill: #9f9f9f;
   height: 20px;
@@ -1041,12 +1041,12 @@ template {
   left: 5px;
 }
 
-#modalLogin .modal-content .modal-body .input-password {
+#modalLoginB .modal-content .modal-body .input-password {
   position: relative;
   margin-right: 10px;
 }
 
-#modalLogin .modal-content .modal-body .input-password #user-pwr {
+#modalLoginB .modal-content .modal-body .input-password #user-pwr {
   outline: none;
   border: 1px solid #e2e1e1;
   height: 35px;
@@ -1054,11 +1054,11 @@ template {
   padding-left: 40px;
 }
 
-#modalLogin .modal-content .modal-body .input-password #user-pwr:focus {
+#modalLoginB .modal-content .modal-body .input-password #user-pwr:focus {
   border-color: #f58220;
 }
 
-#modalLogin .modal-content .modal-body .input-password #icon-password {
+#modalLoginB .modal-content .modal-body .input-password #icon-password {
   position: absolute;
   fill: #9f9f9f;
   height: 20px;
@@ -1067,7 +1067,7 @@ template {
   left: 3px;
 }
 
-#modalLogin .modal-content .modal-body button {
+#modalLoginB .modal-content .modal-body button {
   outline: none;
   background-color: #f58220;
   border: none;
@@ -1077,11 +1077,11 @@ template {
   color: #ffffff;
 }
 
-#modalLogin .modal-content .modal-body button:hover {
+#modalLoginB .modal-content .modal-body button:hover {
   opacity: 0.8;
 }
 
-#modalLogin .modal-content .modal-footer h4 {
+#modalLoginB .modal-content .modal-footer h4 {
   margin: 0;
   color: #9f9f9f;
   padding: 0 20px;
