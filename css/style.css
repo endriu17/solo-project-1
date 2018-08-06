@@ -9,7 +9,7 @@
 }
 
 .border-left-edge, .topbar .topbar-list .topbar--item .wallet, .topbar .topbar-list .topbar--item .notification, .topbar .topbar-list .topbar--item .profile, .topbar .topbar-list .topbar--item .quit {
-  border-left: 1px solid #e2e1e1;
+  border-left: 1px solid #dddddd;
 }
 
 * {
@@ -20,7 +20,7 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background-color: #e2e1e1;
+  background-color: #dddddd;
   font-family: "Open Sans", Helvetica, Arial;
 }
 
@@ -331,7 +331,7 @@ html {
   display: block;
   margin: 50px 0 0 200px;
   padding: 20px;
-  background-color: #e2e1e1;
+  background-color: #dddddd;
   color: #9f9f9f;
   /*  CONTENT GENERAL */
 }
@@ -360,15 +360,15 @@ html {
 
 .content .content-general .content-general__header:after {
   content: "";
-  border-top: 1px solid #e2e1e1;
+  border-top: 1px solid #dddddd;
   display: block;
 }
 
 .content .content-general .content-general__date {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid #e2e1e1;
-  border-bottom: 1px solid #e2e1e1;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   min-height: 50px;
   margin: 0;
   padding: 50px 0;
@@ -379,7 +379,7 @@ html {
 .content .content-general .content-general__date form {
   display: flex;
   padding: 10px 10px 10px 0;
-  border: 1px solid #e2e1e1;
+  border: 1px solid #dddddd;
 }
 
 .content .content-general .content-general__date form input {
@@ -393,7 +393,7 @@ html {
 }
 
 .content .content-general .content-general__date form input:nth-of-type(2) {
-  border-left: 1px solid #e2e1e1;
+  border-left: 1px solid #dddddd;
 }
 
 .content .content-general .content-general__date form #icon_date {
@@ -417,7 +417,7 @@ html {
 }
 
 .content .content-general .content-general__date .button-refresh #icon-refresh {
-  fill: #e2e1e1;
+  fill: #dddddd;
   width: 50%;
 }
 
@@ -485,7 +485,7 @@ html {
 }
 
 .content .content-general .content-details__table table th i {
-  color: #e2e1e1;
+  color: #dddddd;
   font-size: 10px;
   visibility: hidden;
 }
@@ -494,7 +494,7 @@ html {
 .content .content-general .content-details__table table th {
   padding: 20px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .content .content-general .content-details__table .content-details__pagination {
@@ -523,7 +523,7 @@ html {
 }
 
 .content .content-general .content-details__table .content-details__pagination a.active {
-  background-color: #e2e1e1;
+  background-color: #dddddd;
   padding: 8px 16px;
   color: #9f9f9f;
 }
@@ -558,8 +558,8 @@ html {
 }
 
 .content .content-general .content-links-banners table tr {
-  border-bottom: 1px solid #e2e1e1;
-  border-top: 1px solid #e2e1e1;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
   display: flex;
   justify-content: flex-start;
 }
@@ -572,7 +572,7 @@ html {
 }
 
 .content .content-general .content-links-banners table tr:hover {
-  background-color: #e2e1e1;
+  background-color: #dddddd;
 }
 
 .content .content-general .content-links-banners table tr:hover a {
@@ -640,7 +640,7 @@ html {
 
 .content .content-general .content-personaldata form:after {
   content: "";
-  border-bottom: 1px solid #e2e1e1;
+  border-bottom: 1px solid #dddddd;
   display: block;
   margin-top: 30px;
 }
@@ -667,7 +667,7 @@ html {
 .content .content-general .content-personaldata form .field div input {
   width: 60%;
   padding: 10px 20px;
-  border: 1px solid #e2e1e1;
+  border: 1px solid #dddddd;
   outline: none;
 }
 
@@ -1050,7 +1050,7 @@ template {
 #modalLogin .modal-content .modal-header:after {
   content: "";
   display: block;
-  border-bottom: 1px solid #e2e1e1;
+  border-bottom: 1px solid #dddddd;
 }
 
 #modalLogin .modal-content .modal-header span {
@@ -1095,7 +1095,7 @@ template {
 
 #modalLogin .modal-content .modal-body .input-user #user-name {
   outline: none;
-  border: 1px solid #e2e1e1;
+  border: 1px solid #dddddd;
   height: 35px;
   width: 100%;
   padding-left: 40px;
@@ -1121,7 +1121,7 @@ template {
 
 #modalLogin .modal-content .modal-body .input-password #user-pwr {
   outline: none;
-  border: 1px solid #e2e1e1;
+  border: 1px solid #dddddd;
   height: 35px;
   width: 100%;
   padding-left: 40px;
@@ -1188,7 +1188,7 @@ template {
 #modalQuit .modal-content .modal-header:after {
   content: "";
   display: block;
-  border-bottom: 1px solid #e2e1e1;
+  border-bottom: 1px solid #dddddd;
 }
 
 #modalQuit .modal-content .modal-header h4 {
