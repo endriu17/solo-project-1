@@ -126,7 +126,7 @@ document.addEventListener('keyup', function(e) {
 // LINKS import to general
 var linksContent = document.querySelector('link[rel="import"]');
 
-var generalContent = linksContent.import.querySelector('#content-links_export');
+var generalContent = linksContent.import.getElementById('content-links_export');
 var clone = document.importNode(generalContent, true);
 
-document.querySelector('#content-links_import').appendChild(clone);
+document.getElementById('content-links_import').appendChild(clone);

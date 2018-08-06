@@ -1,10 +1,10 @@
 // MODALS import to other sides
 
 var modalsContentTarget = document.querySelector('link[rel="import"]');
-var modalsContent = modalsContentTarget.import.querySelector('#modals-export');
+var modalsContent = modalsContentTarget.import.getElementById('modals-export');
 var cloneModal = document.importNode(modalsContent, true);
 
-document.querySelector('#modals-import').appendChild(cloneModal);
+document.getElementById('modals-import').appendChild(cloneModal);
 
 // MODALS FUNCTIONS
 
