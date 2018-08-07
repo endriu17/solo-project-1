@@ -212,6 +212,17 @@ html {
   display: none;
   position: absolute;
   left: 20px;
+  animation: hamburger;
+  animation-duration: 2s;
+}
+
+@keyframes {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 20px;
+  }
 }
 
 .topbar .topbar-list #hamburger-menu__hiden a {
