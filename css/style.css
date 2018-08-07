@@ -212,17 +212,6 @@ html {
   display: none;
   position: absolute;
   left: 20px;
-  animation: hamburger;
-  animation-duration: 2s;
-}
-
-@keyframes {
-  0% {
-    left: -30px;
-  }
-  100% {
-    left: 20px;
-  }
 }
 
 .topbar .topbar-list #hamburger-menu__hiden a {
@@ -356,6 +345,7 @@ html {
   width: 100%;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.125);
   /* CONTENT DETAILS */
+  /* CONTENT PAYOUT */
   /*  CONTENT LINKS */
   /*  CONTENT PERSONAL DATA */
 }
@@ -534,6 +524,82 @@ html {
 }
 
 .content .content-general .content-details__table .content-details__pagination a.active {
+  background-color: #dddddd;
+  padding: 8px 16px;
+  color: #9f9f9f;
+}
+
+.content .content-general .content-payout__table {
+  padding: 30px 15px;
+}
+
+.content .content-general .content-payout__table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+
+.content .content-general .content-payout__table table tr.onhover:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.content .content-general .content-payout__table table td {
+  color: #000000;
+}
+
+.content .content-general .content-payout__table table th.last_column, .content .content-general .content-payout__table table td.last_column {
+  width: 15%;
+}
+
+.content .content-general .content-payout__table table th:hover {
+  color: #000000;
+  background-color: #f5f5f5;
+}
+
+.content .content-general .content-payout__table table th:hover i {
+  visibility: visible;
+}
+
+.content .content-general .content-payout__table table th i {
+  color: #dddddd;
+  font-size: 10px;
+  visibility: hidden;
+}
+
+.content .content-general .content-payout__table table td,
+.content .content-general .content-payout__table table th {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.content .content-general .content-payout__table .content-payout__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 30px 0 0;
+  margin: 0 auto;
+}
+
+.content .content-general .content-payout__table .content-payout__pagination a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  color: #56819f;
+}
+
+.content .content-general .content-payout__table .content-payout__pagination a:hover {
+  background-color: #f5f5f5;
+  color: #9f9f9f;
+}
+
+.content .content-general .content-payout__table .content-payout__pagination a i {
+  color: #9f9f9f;
+}
+
+.content .content-general .content-payout__table .content-payout__pagination a.active {
   background-color: #dddddd;
   padding: 8px 16px;
   color: #9f9f9f;
