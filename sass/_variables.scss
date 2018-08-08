@@ -30,3 +30,12 @@ $border-style:  1px solid $border-edge-color;
 .border-left-edge {
   border-left: 1px solid $border-edge-color;
 }
+
+
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    $width: 100% / 12 * $i;
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}
