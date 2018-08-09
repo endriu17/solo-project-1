@@ -1,3 +1,17 @@
+// hide Sidebar on click on Hamburger menu, Hamburger menu visible
+function sidebarHide() {
+  document.getElementById("sidebar_hide").style.display = "none";
+  document.getElementById("hamburger-menu__hiden").style.display = "block";
+  document.getElementById("content-margin").style.margin = "50px 0 0 0";
+}
+
+// open Sidebar menu on click on Hamburger menu
+function sidebarOpen() {
+  document.getElementById("sidebar_hide").style.display = "block";
+  document.getElementById("hamburger-menu__hiden").style.display = "none";
+  // document.getElementById("content-margin").style.margin = "50px 0 0 200px";
+}
+
 // Topbar menu hidde on max-width: 767px and visible on min-width: 768px
 function mediaCheck(x) {
     if (x.matches) { // If media query matches
@@ -10,27 +24,12 @@ function mediaCheck(x) {
       document.getElementById("topbar_hide").style.display = "block";
       document.getElementById("content-margin").style.margin = "50px 0 0 200px";
       document.getElementById("hamburger-menu__hiden").style.display = "none";
-
     }
 }
 
 var x = window.matchMedia("(max-width: 767px)");
 mediaCheck(x);
 x.addListener(mediaCheck); // Attach listener function on state changes
-
-// hide Sidebar on click on Hamburger menu, Hamburger menu visible
-function sidebarHide() {
-  document.getElementById("sidebar_hide").style.display = "none";
-  document.getElementById("hamburger-menu__hiden").style.display = "block";
-  document.getElementById("content-margin").style.margin = "50px 0 0 0";
-}
-
-// open Sidebar menu on click on Hamburger menu
-function sidebarOpen() {
-  document.getElementById("sidebar_hide").style.display = "block";
-  document.getElementById("hamburger-menu__hiden").style.display = "none";
-  document.getElementById("content-margin").style.margin = "50px 0 0 200px";
-}
 
 // MODALS FUNCTIONS
 
