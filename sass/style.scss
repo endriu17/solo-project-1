@@ -1,7 +1,6 @@
 @import "variables";
 @import "mixins";
 @import "layout";
-// @import "wrapper_sidebar_topbar";
 @import "sidebar";
 @import "topbar";
 @import "content";
@@ -9,3 +8,35 @@
 @import "modal_login";
 @import "modal_quit";
 @import "media_queries";
+
+#hamburger-menu__hiden {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  position: fixed;
+  @media(min-width: 768px){
+    left: 15px;
+    top: 0;
+    z-index: 5;
+  }
+  a {
+    width: 50px;
+    height: 40px;
+    background-color: $content-background_color;
+    margin: 0;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    .img_hamburger {
+      height: 40px;
+      width: 50px;
+      position: relative;
+      left: 0;
+      filter: invert(.4);
+      &:hover {
+        filter: invert(.6);
+      }
+    }
+  }
+}

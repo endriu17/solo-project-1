@@ -16,7 +16,18 @@
     width: 40%;
     position: relative;
     display: block;
-
+    @media(max-width: 767px){
+      width: 50%;
+    }
+    @media(min-width: 768px){
+      width: 50%;
+    }
+    @media(min-width: 992px){
+      width: 40%;
+    }
+    @media(min-width: 1200px){
+      width: 40%;
+    }
     .modal-header {
       &:after {
         content: "";
@@ -55,8 +66,20 @@
 
       input {
         color: $font-icon_color;
-        font-size: 16px;
+        // font-size: 16px;
         opacity: 0.8;
+        @media(max-width: 767px){
+        font-size: 12px;
+        }
+        @media(min-width: 768px){
+          font-size: 14px;
+        }
+        @media(min-width: 992px){
+      font-size: 16px;
+        }
+        @media(min-width: 1200px){
+        font-size: 16px;
+        }
       }
 
       .input-user {
@@ -114,11 +137,28 @@
         outline: none;
         background-color: $active-refresh_color;
         border: none;
-        height: 35px;
+        // height: 35px;
         width: 20%;
         border-radius: 3px;
         color: $font-hover_color;
-
+        @media(max-width: 767px){
+        font-size: 12px;
+        height: 25px;
+        margin: auto 0;
+        }
+        @media(min-width: 768px){
+          font-size: 12px;
+          height: 30px;
+          margin: auto 0;
+        }
+        @media(min-width: 992px){
+          font-size: 14px;
+          height: 35px;
+        }
+        @media(min-width: 1200px){
+          font-size: 14px;
+          height: 35px;
+        }
         &:hover {
           opacity: 0.8;
         }

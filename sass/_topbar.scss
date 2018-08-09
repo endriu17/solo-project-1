@@ -17,30 +17,7 @@
     height: 50px;
     display: flex;
     justify-content: flex-end;
-    #hamburger-menu__hiden {
-      display: none;
-      position: absolute;
-      left: 20px;
-      a {
-        width: 50px;
-        height: 40px;
-        background-color: $content-background_color;
-        margin: 0;
-        position: relative;
-        top: 5px;
-        left: 0px;
-        .img_hamburger {
-          height: 40px;
-          width: 50px;
-          position: relative;
-          left: 0;
-          filter: invert(.4);
-          &:hover {
-            filter: invert(.6);
-          }
-        }
-      }
-    }
+
     .topbar--item {
       margin: 0;
       padding: 0;

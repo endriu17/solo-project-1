@@ -1,69 +1,35 @@
-// sidebar show hidde
+// Topbar menu hidde on max-width: 767px and visible on min-width: 768px
+function mediaCheck(x) {
+    if (x.matches) { // If media query matches
+      document.getElementById("topbar_hide").style.display = "none";
+      document.getElementById("content-margin").style.margin = "50px 0 0 0";
+      document.getElementById("sidebar-topbar").style.display = "block";
+    } else {
+      document.getElementById("sidebar_hide").style.display = "block";
+      document.getElementById("sidebar-topbar").style.display = "none";
+      document.getElementById("topbar_hide").style.display = "block";
+      document.getElementById("content-margin").style.margin = "50px 0 0 200px";
+      document.getElementById("hamburger-menu__hiden").style.display = "none";
 
+    }
+}
+
+var x = window.matchMedia("(max-width: 767px)");
+mediaCheck(x);
+x.addListener(mediaCheck); // Attach listener function on state changes
+
+// hide Sidebar on click on Hamburger menu, Hamburger menu visible
 function sidebarHide() {
   document.getElementById("sidebar_hide").style.display = "none";
   document.getElementById("hamburger-menu__hiden").style.display = "block";
   document.getElementById("content-margin").style.margin = "50px 0 0 0";
-
 }
 
+// open Sidebar menu on click on Hamburger menu
 function sidebarOpen() {
   document.getElementById("sidebar_hide").style.display = "block";
   document.getElementById("hamburger-menu__hiden").style.display = "none";
   document.getElementById("content-margin").style.margin = "50px 0 0 200px";
-}
-
-// chart
-var chart = document.getElementById('myChart');
-
-if(chart) {
-  var ctx = chart.getContext('2d');
-
-  var chart = new Chart(ctx, {
-    // 1
-    type: 'bar',
-    data: {
-        // 2
-        labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
-        // 3
-        datasets: [{
-            // 4
-            label: "Signups",
-            // 5
-            backgroundColor: '#8DBEC8',
-            borderColor: '#8DBEC8',
-            // 6
-            data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21, 88 ],
-        },
-        {
-            label: "FTD",
-            backgroundColor: '#F29E4E',
-            borderColor: '#F29E4E',
-            data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63, 76 ],
-        },
-        {
-            label: "Earned",
-            backgroundColor: '#71B374',
-            borderColor: '#71B374',
-            data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
-            // 7
-            hidden: true,
-        }]
-    },
-    options: {
-      legend: {
-        display: true,
-        labels: {
-        padding: 30,
-        boxWidth: 20,
-        radius: 10,
-        usePointStyle: true,
-        pointStyle: 5,
-        }
-      }
-    }
-  });
-
 }
 
 // MODALS FUNCTIONS
@@ -130,3 +96,55 @@ var generalContent = linksContent.import.getElementById('content-links_export');
 var clone = document.importNode(generalContent, true);
 
 document.getElementById('content-links_import').appendChild(clone);
+
+// chart
+var chart = document.getElementById('myChart');
+
+if(chart) {
+  var ctx = chart.getContext('2d');
+
+  var chart = new Chart(ctx, {
+    // 1
+    type: 'bar',
+    data: {
+        // 2
+        labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+        // 3
+        datasets: [{
+            // 4
+            label: "Signups",
+            // 5
+            backgroundColor: '#8DBEC8',
+            borderColor: '#8DBEC8',
+            // 6
+            data: [ 52, 51, 41, 94, 26, 6, 72, 9, 21, 88 ],
+        },
+        {
+            label: "FTD",
+            backgroundColor: '#F29E4E',
+            borderColor: '#F29E4E',
+            data: [ 6, 72, 1, 0, 47, 11, 50, 44, 63, 76 ],
+        },
+        {
+            label: "Earned",
+            backgroundColor: '#71B374',
+            borderColor: '#71B374',
+            data: [ 59, 49, 68, 90, 67, 41, 13, 38, 48, 48 ],
+            // 7
+            hidden: true,
+        }]
+    },
+    options: {
+      legend: {
+        display: true,
+        labels: {
+        padding: 30,
+        boxWidth: 20,
+        radius: 10,
+        usePointStyle: true,
+        pointStyle: 5,
+        }
+      }
+    }
+  });
+}

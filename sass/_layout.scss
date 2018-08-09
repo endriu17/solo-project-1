@@ -8,15 +8,18 @@ html {
   margin: 0;
   background-color: $border-edge_color;
   font-family: $brand-font;
+  position: relative;
 }
 
 .home {
   li.home {
     background-color: $button-hover_color;
-    height: 50px; 
+    height: 50px;
     margin: 0;
     width: 195px;
     opacity: 0.8;
+    z-index: 6;
+    color: $font-hover_color;
     &:before{
       content:"";
       position:absolute;

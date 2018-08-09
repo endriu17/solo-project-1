@@ -1,11 +1,19 @@
 .content {
   display: block;
-  margin: 50px 0 0 200px;
+
   padding: 20px;
   background-color: $border-edge_color;
   color: $font-icon_color;
   @media(max-width: 767px) {
-    margin: 50px 0 0;
+    margin: 0;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: -1;
+    margin: 0;
+  }
+  @media(min-width: 768px){
+    margin: 50px 0 0 200px;
   }
   #content-links_import {
     margin-top: 20px;
