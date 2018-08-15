@@ -950,7 +950,7 @@ html {
   visibility: visible;
 }
 
-.topbar-content_wrapper .content .content-general .content-links-banners table tr:hover #icon-quit {
+.topbar-content_wrapper .content .content-general .content-links-banners table tr:hover #icon-trash {
   visibility: visible;
   cursor: pointer;
 }
@@ -979,7 +979,7 @@ html {
   visibility: hidden;
 }
 
-.topbar-content_wrapper .content .content-general .content-links-banners table tr td #icon-quit {
+.topbar-content_wrapper .content .content-general .content-links-banners table tr td #icon-trash {
   width: 17px;
   height: 17px;
   fill: #9f9f9f;
@@ -987,7 +987,7 @@ html {
   margin-right: 20px;
 }
 
-.topbar-content_wrapper .content .content-general .content-links-banners table tr td #icon-quit:hover {
+.topbar-content_wrapper .content .content-general .content-links-banners table tr td #icon-trash:hover {
   fill: #f58220;
 }
 
