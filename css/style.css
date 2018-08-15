@@ -114,7 +114,6 @@ html {
   top: 0;
   bottom: 0;
   display: block;
-  overflow: hidden;
 }
 
 #sidebar_hide.sidebar .sidebar-menu {
@@ -175,6 +174,12 @@ html {
   width: 100%;
 }
 
+@media (max-width: 360px) {
+  #sidebar_hide.sidebar .sidebar-nav ul.sidebar-list_main .sidebar-link a {
+    line-height: 35px;
+  }
+}
+
 #sidebar_hide.sidebar .sidebar-nav ul.sidebar-list_main .sidebar-link a #icon-general {
   fill: #9f9f9f;
   width: 20px;
@@ -183,7 +188,7 @@ html {
 }
 
 #sidebar_hide.sidebar .sidebar-nav ul.sidebar-list_main .sidebar-link:hover {
-  opacity: 0.8;
+  background-color: #555555;
 }
 
 #sidebar_hide.sidebar .sidebar-nav ul.sidebar-list_main .sidebar-link:hover a {
@@ -286,8 +291,10 @@ html {
   height: 40px;
 }
 
-#sidebar_hide.sidebar .sidebar-topbar_background #sidebar-topbar.sidebar-topbar__menu ul.sidebar-list_hidden li.sidebar-topbar__item:hover {
-  opacity: 0.8;
+@media (max-width: 360px) {
+  #sidebar_hide.sidebar .sidebar-topbar_background #sidebar-topbar.sidebar-topbar__menu ul.sidebar-list_hidden li.sidebar-topbar__item {
+    height: 35px;
+  }
 }
 
 #sidebar_hide.sidebar .sidebar-topbar_background #sidebar-topbar.sidebar-topbar__menu ul.sidebar-list_hidden li.sidebar-topbar__item:hover a {
@@ -1437,6 +1444,12 @@ template {
   display: block;
 }
 
+@media (max-width: 360px) {
+  #modalLogin .modal-content, #modalLogin_two .modal-content {
+    width: 80%;
+  }
+}
+
 @media (max-width: 767px) {
   #modalLogin .modal-content, #modalLogin_two .modal-content {
     width: 50%;
@@ -1490,15 +1503,35 @@ template {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
+@media (max-width: 360px) {
+  #modalLogin .modal-content .modal-header h4, #modalLogin_two .modal-content .modal-header h4 {
+    font-size: 14px;
+  }
+}
+
 #modalLogin .modal-content .modal-body, #modalLogin_two .modal-content .modal-body {
   padding: 40px 20px;
   display: flex;
   justify-content: space-around;
 }
 
+@media (max-width: 360px) {
+  #modalLogin .modal-content .modal-body, #modalLogin_two .modal-content .modal-body {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+}
+
 #modalLogin .modal-content .modal-body input, #modalLogin_two .modal-content .modal-body input {
   color: #9f9f9f;
   opacity: 0.8;
+}
+
+@media (max-width: 360px) {
+  #modalLogin .modal-content .modal-body input, #modalLogin_two .modal-content .modal-body input {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1536,6 +1569,13 @@ template {
   height: 35px;
   width: 100%;
   padding-left: 40px;
+}
+
+@media (max-width: 360px) {
+  #modalLogin .modal-content .modal-body .input-user #user-name, #modalLogin .modal-content .modal-body .input-user #user-name_two, #modalLogin_two .modal-content .modal-body .input-user #user-name, #modalLogin_two .modal-content .modal-body .input-user #user-name_two {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 #modalLogin .modal-content .modal-body .input-user #user-name:focus, #modalLogin .modal-content .modal-body .input-user #user-name_two:focus, #modalLogin_two .modal-content .modal-body .input-user #user-name:focus, #modalLogin_two .modal-content .modal-body .input-user #user-name_two:focus {
@@ -1586,6 +1626,13 @@ template {
   color: #ffffff;
 }
 
+@media (max-width: 360px) {
+  #modalLogin .modal-content .modal-body button, #modalLogin_two .modal-content .modal-body button {
+    font-size: 10px;
+    width: 40%;
+  }
+}
+
 @media (max-width: 767px) {
   #modalLogin .modal-content .modal-body button, #modalLogin_two .modal-content .modal-body button {
     font-size: 12px;
@@ -1626,7 +1673,8 @@ template {
   padding: 0 20px;
 }
 
-#modalQuit, #modalQuit_two {
+#modalQuit,
+#modalQuit_two {
   display: none;
   position: fixed;
   z-index: 19950;
@@ -1638,7 +1686,8 @@ template {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#modalQuit .modal-content, #modalQuit_two .modal-content {
+#modalQuit .modal-content,
+#modalQuit_two .modal-content {
   margin: 10% auto;
   padding: 0;
   background-color: #FFF;
@@ -1647,41 +1696,55 @@ template {
   display: block;
 }
 
+@media (max-width: 360px) {
+  #modalQuit .modal-content,
+  #modalQuit_two .modal-content {
+    width: 80%;
+  }
+}
+
 @media (max-width: 767px) {
-  #modalQuit .modal-content, #modalQuit_two .modal-content {
+  #modalQuit .modal-content,
+  #modalQuit_two .modal-content {
     width: 50%;
   }
 }
 
 @media (min-width: 768px) {
-  #modalQuit .modal-content, #modalQuit_two .modal-content {
+  #modalQuit .modal-content,
+  #modalQuit_two .modal-content {
     width: 50%;
   }
 }
 
 @media (min-width: 992px) {
-  #modalQuit .modal-content, #modalQuit_two .modal-content {
+  #modalQuit .modal-content,
+  #modalQuit_two .modal-content {
     width: 40%;
   }
 }
 
 @media (min-width: 1200px) {
-  #modalQuit .modal-content, #modalQuit_two .modal-content {
+  #modalQuit .modal-content,
+  #modalQuit_two .modal-content {
     width: 25%;
   }
 }
 
-#modalQuit .modal-content .modal-header, #modalQuit_two .modal-content .modal-header {
+#modalQuit .modal-content .modal-header,
+#modalQuit_two .modal-content .modal-header {
   margin: 0;
 }
 
-#modalQuit .modal-content .modal-header:after, #modalQuit_two .modal-content .modal-header:after {
+#modalQuit .modal-content .modal-header:after,
+#modalQuit_two .modal-content .modal-header:after {
   content: "";
   display: block;
   border-bottom: 1px solid #dddddd;
 }
 
-#modalQuit .modal-content .modal-header h4, #modalQuit_two .modal-content .modal-header h4 {
+#modalQuit .modal-content .modal-header h4,
+#modalQuit_two .modal-content .modal-header h4 {
   margin: 0;
   color: #9f9f9f;
   padding: 25px;
@@ -1689,54 +1752,103 @@ template {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
+@media (max-width: 360px) {
+  #modalQuit .modal-content .modal-header h4,
+  #modalQuit_two .modal-content .modal-header h4 {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 767px) {
-  #modalQuit .modal-content .modal-header h4, #modalQuit_two .modal-content .modal-header h4 {
+  #modalQuit .modal-content .modal-header h4,
+  #modalQuit_two .modal-content .modal-header h4 {
     font-size: 14px;
   }
 }
 
 @media (min-width: 768px) {
-  #modalQuit .modal-content .modal-header h4, #modalQuit_two .modal-content .modal-header h4 {
+  #modalQuit .modal-content .modal-header h4,
+  #modalQuit_two .modal-content .modal-header h4 {
     font-size: 16px;
   }
 }
 
 @media (min-width: 992px) {
-  #modalQuit .modal-content .modal-header h4, #modalQuit_two .modal-content .modal-header h4 {
+  #modalQuit .modal-content .modal-header h4,
+  #modalQuit_two .modal-content .modal-header h4 {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1200px) {
-  #modalQuit .modal-content .modal-header h4, #modalQuit_two .modal-content .modal-header h4 {
+  #modalQuit .modal-content .modal-header h4,
+  #modalQuit_two .modal-content .modal-header h4 {
     font-size: 18px;
   }
 }
 
-#modalQuit .modal-content .modal-body, #modalQuit_two .modal-content .modal-body {
+#modalQuit .modal-content .modal-body,
+#modalQuit_two .modal-content .modal-body {
   padding: 25px 20px;
   display: flex;
   justify-content: flex-end;
 }
 
+@media (max-width: 360px) {
+  #modalQuit .modal-content .modal-body,
+  #modalQuit_two .modal-content .modal-body {
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 767px) {
-  #modalQuit .modal-content .modal-body, #modalQuit_two .modal-content .modal-body {
+  #modalQuit .modal-content .modal-body,
+  #modalQuit_two .modal-content .modal-body {
     flex-wrap: wrap;
   }
 }
 
-#modalQuit .modal-content .modal-body #quitCancelBtn, #modalQuit .modal-content .modal-body #quitCancelBtn_two, #modalQuit_two .modal-content .modal-body #quitCancelBtn, #modalQuit_two .modal-content .modal-body #quitCancelBtn_two {
+#modalQuit .modal-content .modal-body #quitCancelBtn,
+#modalQuit .modal-content .modal-body #quitCancelBtn_two,
+#modalQuit_two .modal-content .modal-body #quitCancelBtn,
+#modalQuit_two .modal-content .modal-body #quitCancelBtn_two {
   background-color: #9f9f9f;
   color: #ffffff;
   margin-right: 10px;
 }
 
-#modalQuit .modal-content .modal-body #quitButton, #modalQuit .modal-content .modal-body #quitButton_two, #modalQuit_two .modal-content .modal-body #quitButton, #modalQuit_two .modal-content .modal-body #quitButton_two {
+@media (max-width: 360px) {
+  #modalQuit .modal-content .modal-body #quitCancelBtn,
+  #modalQuit .modal-content .modal-body #quitCancelBtn_two,
+  #modalQuit_two .modal-content .modal-body #quitCancelBtn,
+  #modalQuit_two .modal-content .modal-body #quitCancelBtn_two {
+    width: 30%;
+    font-size: 12px;
+  }
+}
+
+#modalQuit .modal-content .modal-body #quitButton,
+#modalQuit .modal-content .modal-body #quitButton_two,
+#modalQuit_two .modal-content .modal-body #quitButton,
+#modalQuit_two .modal-content .modal-body #quitButton_two {
   background-color: #f58220;
   color: #ffffff;
 }
 
-#modalQuit .modal-content .modal-body button, #modalQuit_two .modal-content .modal-body button {
+@media (max-width: 360px) {
+  #modalQuit .modal-content .modal-body #quitButton,
+  #modalQuit .modal-content .modal-body #quitButton_two,
+  #modalQuit_two .modal-content .modal-body #quitButton,
+  #modalQuit_two .modal-content .modal-body #quitButton_two {
+    width: 30%;
+    font-size: 12px;
+  }
+}
+
+#modalQuit .modal-content .modal-body button,
+#modalQuit_two .modal-content .modal-body button {
   outline: none;
   border: none;
   height: 40px;
@@ -1745,8 +1857,19 @@ template {
   color: #ffffff;
 }
 
+@media (max-width: 360px) {
+  #modalQuit .modal-content .modal-body button,
+  #modalQuit_two .modal-content .modal-body button {
+    height: 25px;
+    width: 35%;
+    font-size: 12px;
+    padding: 1px;
+  }
+}
+
 @media (max-width: 767px) {
-  #modalQuit .modal-content .modal-body button, #modalQuit_two .modal-content .modal-body button {
+  #modalQuit .modal-content .modal-body button,
+  #modalQuit_two .modal-content .modal-body button {
     height: 30px;
     width: 25%;
     font-size: 100%;
@@ -1754,11 +1877,13 @@ template {
   }
 }
 
-#modalQuit .modal-content .modal-body button:hover, #modalQuit_two .modal-content .modal-body button:hover {
+#modalQuit .modal-content .modal-body button:hover,
+#modalQuit_two .modal-content .modal-body button:hover {
   opacity: 0.8;
 }
 
-#modalQuit .modal-content .modal-footer h4, #modalQuit_two .modal-content .modal-footer h4 {
+#modalQuit .modal-content .modal-footer h4,
+#modalQuit_two .modal-content .modal-footer h4 {
   margin: 0;
   color: #9f9f9f;
   padding: 0 20px;

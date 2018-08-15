@@ -1,100 +1,141 @@
-#modalQuit, #modalQuit_two {
-    display: none;
-    position: fixed;
-    z-index: 19950;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    .modal-content {
-        margin: 10% auto;
-        padding: 0;
-        background-color: #FFF;
-        width: 25%;
-        position: relative;
-        display: block;
-        @media(max-width: 767px){
-          width: 50%;
-        }
-        @media(min-width: 768px){
-          width: 50%;
-        }
-        @media(min-width: 992px){
-          width: 40%;
-        }
-        @media(min-width: 1200px){
-          width: 25%;
-        }
-        .modal-header {
-            margin: 0;
-            &:after {
-                content: "";
-                display: block;
-                border-bottom: $border-style;
-            }
-            h4 {
-                margin: 0;
-                color: $font-icon_color;
-                padding: 25px;
-                // font-size: 18px;
-                font-weight: normal;
-                font-family: $brand-font;
-                @media(max-width: 767px){
-                    font-size: 14px;
-                }
-                @media(min-width: 768px){
-                    font-size: 16px;
-                }
-                @media(min-width: 992px){
-                    font-size: 18px;
-                }
-                @media(min-width: 1200px){
-                    font-size: 18px;
-                }
-            }
-        }
-        .modal-body {
-            padding: 25px 20px;
-            display: flex;
-            justify-content: flex-end;
-            @media(max-width: 767px){
-              flex-wrap: wrap;
-            }
-            #quitCancelBtn, #quitCancelBtn_two {
-              background-color: $font-icon_color;
-              color: $font-hover_color;
-              margin-right: 10px;
-            }
-            #quitButton, #quitButton_two {
-              background-color: $active-refresh_color;
-              color: $font-hover_color;
-            }
-            button {
-                outline: none;
-                border: none;
-                height: 40px;
-                width: 30%;
-                border-radius: 3px;
-                color: $font-hover_color;
-                @media(max-width: 767px){
-                  height: 30px;
-                  width: 25%;
-                  font-size: 100%;
-                  padding: 2px;
-                }
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
-        .modal-footer {
-            h4 {
-                margin: 0;
-                color: $font-icon_color;
-                padding: 0 20px;
-            }
-        }
+#modalQuit,
+#modalQuit_two {
+  display: none;
+  position: fixed;
+  z-index: 19950;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .modal-content {
+    margin: 10% auto;
+    padding: 0;
+    background-color: #FFF;
+    width: 25%;
+    position: relative;
+    display: block;
+    @media(max-width: 360px) {
+      width: 80%;
     }
+    @media(max-width: 767px) {
+      width: 50%;
+    }
+    @media(min-width: 768px) {
+      width: 50%;
+    }
+    @media(min-width: 992px) {
+      width: 40%;
+    }
+    @media(min-width: 1200px) {
+      width: 25%;
+    }
+
+    .modal-header {
+      margin: 0;
+
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: $border-style;
+      }
+
+      h4 {
+        margin: 0;
+        color: $font-icon_color;
+        padding: 25px;
+        font-weight: normal;
+        font-family: $brand-font;
+        @media(max-width: 360px) {
+          font-size: 14px;
+        }
+        @media(max-width: 767px) {
+          font-size: 14px;
+        }
+        @media(min-width: 768px) {
+          font-size: 16px;
+        }
+        @media(min-width: 992px) {
+          font-size: 18px;
+        }
+        @media(min-width: 1200px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 25px 20px;
+      display: flex;
+      justify-content: flex-end;
+      @media(max-width: 360px) {
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content:space-around;
+      }
+      @media(max-width: 767px) {
+        flex-wrap: wrap;
+      }
+
+      #quitCancelBtn,
+      #quitCancelBtn_two {
+        background-color: $font-icon_color;
+        color: $font-hover_color;
+        margin-right: 10px;
+        @media(max-width: 360px) {
+          // height: 25px;
+        width: 30%;
+          font-size: 12px;
+          // padding: 1px;
+        }
+      }
+
+      #quitButton,
+      #quitButton_two {
+        background-color: $active-refresh_color;
+        color: $font-hover_color;
+        @media(max-width: 360px) {
+          // height: 25px;
+          width: 30%;
+          font-size: 12px;
+          // padding: 1px;
+        }
+      }
+
+      button {
+        outline: none;
+        border: none;
+        height: 40px;
+        width: 30%;
+        border-radius: 3px;
+        color: $font-hover_color;
+        @media(max-width: 360px) {
+          height: 25px;
+          width: 35%;
+          font-size: 12px;
+          padding: 1px;
+        }
+        @media(max-width: 767px) {
+          height: 30px;
+          width: 25%;
+          font-size: 100%;
+          padding: 2px;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .modal-footer {
+      h4 {
+        margin: 0;
+        color: $font-icon_color;
+        padding: 0 20px;
+      }
+    }
+  }
 }

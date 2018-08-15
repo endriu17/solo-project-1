@@ -16,6 +16,9 @@
     width: 40%;
     position: relative;
     display: block;
+    @media(max-width: 360px) {
+      width: 80%;
+    }
     @media(max-width: 767px){
       width: 50%;
     }
@@ -56,6 +59,9 @@
         font-size: 16px;
         font-weight: normal;
         font-family: $brand-font;
+        @media(max-width: 360px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -63,11 +69,18 @@
       padding: 40px 20px;
       display: flex;
       justify-content: space-around;
-
+      @media(max-width: 360px) {
+        flex-wrap: wrap;
+        padding: 10px;
+      }
       input {
         color: $font-icon_color;
         // font-size: 16px;
         opacity: 0.8;
+        @media(max-width: 360px) {
+          display: flex;
+          justify-content: space-around;
+        }
         @media(max-width: 767px){
         font-size: 12px;
         }
@@ -92,7 +105,10 @@
           height: 35px;
           width: 100%;
           padding-left: 40px;
-
+          @media(max-width: 360px) {
+            display: flex;
+            justify-content: space-around;
+          }
           &:focus {
             border-color: $active-refresh_color;
           }
@@ -141,6 +157,10 @@
         width: 20%;
         border-radius: 3px;
         color: $font-hover_color;
+        @media(max-width: 360px) {
+          font-size: 10px;
+          width: 40%;
+        }
         @media(max-width: 767px){
         font-size: 12px;
         height: 25px;
