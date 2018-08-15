@@ -1,4 +1,4 @@
-#modalQuit {
+#modalQuit, #modalQuit_two {
     display: none;
     position: fixed;
     z-index: 19950;
@@ -62,12 +62,12 @@
             @media(max-width: 767px){
               flex-wrap: wrap;
             }
-            #quitCancelBtn {
+            #quitCancelBtn, #quitCancelBtn_two {
               background-color: $font-icon_color;
               color: $font-hover_color;
               margin-right: 10px;
             }
-            #quitButton {
+            #quitButton, #quitButton_two {
               background-color: $active-refresh_color;
               color: $font-hover_color;
             }

@@ -1,4 +1,4 @@
-#modalLogin {
+#modalLogin, #modalLogin_two {
   display: none;
   position: fixed;
   z-index: 19950;
@@ -86,7 +86,7 @@
         position: relative;
         margin-right: 10px;
 
-        #user-name {
+        #user-name, #user-name_two {
           outline: none;
           border: $border-style;
           height: 35px;
@@ -112,7 +112,7 @@
         position: relative;
         margin-right: 10px;
 
-        #user-pwr {
+        #user-pwr, #user-pwr_two {
           outline: none;
           border: $border-style;
           height: 35px;

@@ -2,12 +2,19 @@
 @import "mixins";
 @import "layout";
 @import "sidebar";
-@import "topbar";
-@import "content";
+.topbar-content_wrapper{
+  width: 100%;
+  margin: 0;
+  display: block;
+  // padding: 0 20px 0;
+  @import "topbar";
+  @import "content";
+}
 @import "normalize";
 @import "modal_login";
 @import "modal_quit";
 @import "media_queries";
+
 
 #hamburger-menu__hiden {
   display: none;
