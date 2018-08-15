@@ -174,7 +174,7 @@ html {
   width: 100%;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #sidebar_hide.sidebar .sidebar-nav ul.sidebar-list_main .sidebar-link a {
     line-height: 35px;
   }
@@ -291,7 +291,7 @@ html {
   height: 40px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #sidebar_hide.sidebar .sidebar-topbar_background #sidebar-topbar.sidebar-topbar__menu ul.sidebar-list_hidden li.sidebar-topbar__item {
     height: 35px;
   }
@@ -596,6 +596,12 @@ html {
   border: 1px solid #dddddd;
 }
 
+@media (max-width: 380px) {
+  .topbar-content_wrapper .content .content-general .content-general__date form {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 767px) {
   .topbar-content_wrapper .content .content-general .content-general__date form {
     width: 100%;
@@ -627,6 +633,12 @@ html {
   width: 30px;
   height: 30px;
   fill: #9f9f9f;
+}
+
+@media (max-width: 380px) {
+  .topbar-content_wrapper .content .content-general .content-general__date form #icon_date {
+    display: none;
+  }
 }
 
 .topbar-content_wrapper .content .content-general .content-general__date .button-refresh {
@@ -1444,7 +1456,7 @@ template {
   display: block;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalLogin .modal-content, #modalLogin_two .modal-content {
     width: 80%;
   }
@@ -1503,7 +1515,7 @@ template {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalLogin .modal-content .modal-header h4, #modalLogin_two .modal-content .modal-header h4 {
     font-size: 14px;
   }
@@ -1515,7 +1527,7 @@ template {
   justify-content: space-around;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalLogin .modal-content .modal-body, #modalLogin_two .modal-content .modal-body {
     flex-wrap: wrap;
     padding: 10px;
@@ -1527,7 +1539,7 @@ template {
   opacity: 0.8;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalLogin .modal-content .modal-body input, #modalLogin_two .modal-content .modal-body input {
     display: flex;
     justify-content: space-around;
@@ -1571,7 +1583,7 @@ template {
   padding-left: 40px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalLogin .modal-content .modal-body .input-user #user-name, #modalLogin .modal-content .modal-body .input-user #user-name_two, #modalLogin_two .modal-content .modal-body .input-user #user-name, #modalLogin_two .modal-content .modal-body .input-user #user-name_two {
     display: flex;
     justify-content: space-around;
@@ -1626,7 +1638,7 @@ template {
   color: #ffffff;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalLogin .modal-content .modal-body button, #modalLogin_two .modal-content .modal-body button {
     font-size: 10px;
     width: 40%;
@@ -1696,7 +1708,7 @@ template {
   display: block;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalQuit .modal-content,
   #modalQuit_two .modal-content {
     width: 80%;
@@ -1752,7 +1764,7 @@ template {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalQuit .modal-content .modal-header h4,
   #modalQuit_two .modal-content .modal-header h4 {
     font-size: 14px;
@@ -1794,7 +1806,7 @@ template {
   justify-content: flex-end;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalQuit .modal-content .modal-body,
   #modalQuit_two .modal-content .modal-body {
     padding: 10px;
@@ -1819,7 +1831,7 @@ template {
   margin-right: 10px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalQuit .modal-content .modal-body #quitCancelBtn,
   #modalQuit .modal-content .modal-body #quitCancelBtn_two,
   #modalQuit_two .modal-content .modal-body #quitCancelBtn,
@@ -1837,7 +1849,7 @@ template {
   color: #ffffff;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalQuit .modal-content .modal-body #quitButton,
   #modalQuit .modal-content .modal-body #quitButton_two,
   #modalQuit_two .modal-content .modal-body #quitButton,
@@ -1857,7 +1869,7 @@ template {
   color: #ffffff;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   #modalQuit .modal-content .modal-body button,
   #modalQuit_two .modal-content .modal-body button {
     height: 25px;

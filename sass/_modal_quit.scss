@@ -17,7 +17,7 @@
     width: 25%;
     position: relative;
     display: block;
-    @media(max-width: 360px) {
+    @media(max-width: 380px) {
       width: 80%;
     }
     @media(max-width: 767px) {
@@ -48,7 +48,7 @@
         padding: 25px;
         font-weight: normal;
         font-family: $brand-font;
-        @media(max-width: 360px) {
+        @media(max-width: 380px) {
           font-size: 14px;
         }
         @media(max-width: 767px) {
@@ -70,7 +70,7 @@
       padding: 25px 20px;
       display: flex;
       justify-content: flex-end;
-      @media(max-width: 360px) {
+      @media(max-width: 380px) {
         padding: 10px;
         flex-wrap: wrap;
         justify-content:space-around;
@@ -84,7 +84,7 @@
         background-color: $font-icon_color;
         color: $font-hover_color;
         margin-right: 10px;
-        @media(max-width: 360px) {
+        @media(max-width: 380px) {
           // height: 25px;
         width: 30%;
           font-size: 12px;
@@ -96,7 +96,7 @@
       #quitButton_two {
         background-color: $active-refresh_color;
         color: $font-hover_color;
-        @media(max-width: 360px) {
+        @media(max-width: 380px) {
           // height: 25px;
           width: 30%;
           font-size: 12px;
@@ -111,7 +111,7 @@
         width: 30%;
         border-radius: 3px;
         color: $font-hover_color;
-        @media(max-width: 360px) {
+        @media(max-width: 380px) {
           height: 25px;
           width: 35%;
           font-size: 12px;

@@ -61,7 +61,7 @@
           line-height: 50px;
           padding-right: 20px;
           width: 100%;
-          @media(max-width: 360px) {
+          @media(max-width: 380px) {
             line-height: 35px;
           }
           #icon-general {
@@ -165,7 +165,7 @@
         width: 100%;
         text-align: center;
         height: 40px;
-        @media(max-width: 360px) {
+        @media(max-width: 380px) {
           height: 35px;
         }
         &:hover {

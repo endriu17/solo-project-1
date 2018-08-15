@@ -66,6 +66,9 @@
         padding: 10px 10px 10px 0;
         border: $border-style;
         @extend .flex-center;
+        @media(max-width: 380px) {
+          flex-wrap: wrap;
+        }
         @media(max-width: 767px) {
           width: 100%;
         }
@@ -92,6 +95,9 @@
           width: 30px;
           height: 30px;
           fill: $font-icon_color;
+          @media(max-width: 380px) {
+            display: none;
+          }
         }
       }
 
